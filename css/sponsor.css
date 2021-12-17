@@ -1,0 +1,160 @@
+/* SPONSOR SECTION  */
+#sponsor .content {
+  position: relative;
+  height: 350px;
+  width: 80%;
+  margin-top: 150px;
+}
+
+#sponsor .frontcard {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/frontcard.jpeg);
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  border: rgb(165, 165, 165) solid;
+  border-width: 0.5px;
+}
+
+#sponsor .backgradient {
+  height: 100%;
+  width: 100%;
+  background: rgb(177, 0, 255);
+  background: linear-gradient(
+    74deg,
+    rgba(177, 0, 255, 1) 0%,
+    rgba(28, 0, 36, 1) 100%
+  );
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+#sponsor .backgradient::before,
+.frontcard::before {
+  content: "";
+  position: absolute;
+  height: 105%;
+  width: 104%;
+  background: linear-gradient(
+    90deg,
+    rgb(47, 33, 133),
+    rgb(47, 33, 133),
+    rgb(47, 33, 133)
+  );
+  z-index: -1;
+  filter: blur(20px);
+}
+
+#sponsor .words {
+  color: rgb(155, 154, 154);
+  position: absolute;
+  top: 55%;
+  left: 30px;
+  right: 10px;
+}
+
+#sponsor .previous-sponsor {
+  width: 100%;
+  height: 300px;
+  background: rgb(20, 39, 134);
+  background: radial-gradient(
+    circle,
+    rgba(20, 39, 134, 1) 0%,
+    rgba(72, 13, 112, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+#sponsor .sponsor-logos {
+  height: 55px;
+  background-color: black;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#sponsor .logo {
+  display: inline-flex;
+}
+#sponsor .logo img {
+  width: 100px;
+  margin-right: 80px;
+}
+
+@media only screen and (min-width: 600px) {
+  #sponsor .desciption {
+    margin-top: 150px;
+    text-align: center;
+    color: gray;
+    margin-bottom: 100px;
+  }
+  #sponsor .desciption h1 {
+    margin-bottom: 30px;
+  }
+
+  #sponsor .desciption p {
+    font-size: 1.3rem;
+    line-height: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #sponsor .desciption {
+    margin-top: 150px;
+    text-align: center;
+    color: gray;
+    margin-bottom: 100px;
+  }
+  #sponsor .desciption h1 {
+    margin-bottom: 30px;
+  }
+
+  #sponsor .desciption p {
+    font-size: 0.7rem;
+    line-height: 0.2rem;
+  }
+}
+
+/* GALLERY */
+#gallery .container {
+  perspective: 1400px;
+  width: 300px;
+  height: 400px;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%, -50%);
+}
+
+#gallery div,
+svg {
+  position: absolute;
+}
+#gallery .stage,
+.ring,
+.img {
+  width: 100%;
+  height: 350px;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+/* CONTACT */
+
+#contact * {
+  text-align: center;
+  color: white;
+}
+
+#contact .col-lg-6 {
+  justify-content: center;
+}
+
+#contact .col-lg-6 {
+  justify-content: center;
+}
+
+#contact p {
+  margin-top: 10px;
+  font-size: 1rem;
+}

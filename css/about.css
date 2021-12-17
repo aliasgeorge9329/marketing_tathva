@@ -1,0 +1,51 @@
+/* ABOUT */
+#about {
+  padding: 60px 120px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  background: rgb(53, 0, 255);
+  background: linear-gradient(
+      0deg,
+      rgba(91, 0, 255, 0.9) 0%,
+      rgba(0, 0, 0, 0.9) 75%
+    ),
+    url("../images/frontcard.jpeg");
+  background-size: 40%;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 990px) {
+  #about h1 {
+    font-size: 400%;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+  }
+  #about p {
+    color: gray;
+    line-height: 2.4rem;
+    font-size: 150%;
+  }
+  #about .about-img {
+    width: 300px;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #about h1 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+  }
+  #about p {
+    color: gray;
+    line-height: 1.8rem;
+    font-size: 20px;
+  }
+
+  #about .about-img {
+    width: 50%;
+    margin: 30px 30% 0;
+  }
+}
