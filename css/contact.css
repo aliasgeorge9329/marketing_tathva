@@ -1,0 +1,19 @@
+/* CONTACT */
+
+#contact * {
+  text-align: center;
+  color: white;
+}
+
+#contact .col-lg-6 {
+  justify-content: center;
+}
+
+#contact .col-lg-6 {
+  justify-content: center;
+}
+
+#contact p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
