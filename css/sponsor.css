@@ -1,9 +1,37 @@
 /* SPONSOR SECTION  */
-#sponsor .content {
-  position: relative;
-  height: 350px;
-  width: 80%;
-  margin-top: 150px;
+
+@media only screen and (min-width: 600px) {
+  #sponsor .content {
+    position: relative;
+    height: 350px;
+    width: 80%;
+    margin-top: 150px;
+  }
+  #sponsor .words {
+    color: rgb(155, 154, 154);
+    position: absolute;
+    top: 55%;
+    left: 30px;
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #sponsor .content {
+    position: relative;
+    height: 200px;
+    width: 80%;
+    margin-top: 150px;
+  }
+
+  #sponsor .words {
+    color: rgb(155, 154, 154);
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    right: 10px;
+    font-size: 0.8rem;
+  }
 }
 
 #sponsor .frontcard {
@@ -47,14 +75,6 @@
   filter: blur(20px);
 }
 
-#sponsor .words {
-  color: rgb(155, 154, 154);
-  position: absolute;
-  top: 55%;
-  left: 30px;
-  right: 10px;
-}
-
 #sponsor .previous-sponsor {
   width: 100%;
   height: 300px;
@@ -93,15 +113,17 @@
     margin-top: 150px;
     text-align: center;
     color: gray;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   #sponsor .desciption h1 {
     margin-bottom: 30px;
   }
 
   #sponsor .desciption p {
-    font-size: 0.7rem;
-    line-height: 0.2rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
   }
   #sponsor img {
     width: 100%;
