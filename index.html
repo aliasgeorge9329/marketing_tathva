@@ -22,6 +22,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/events.css" />
@@ -500,38 +505,83 @@
     <!-- CONTACT -->
     <!-- GAllERY -->
     <section id="gallery">
-      <!-- <h1
+      <h1
         style="
           color: white;
           margin-top: 150px;
+          margin-bottom: 100px;
           text-align: center;
           font-size: 4rem;
         "
       >
         Gallery
       </h1>
-      <div class="stage">
-        <div class="container">
-          <div class="ring">
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
-            <div class="img"></div>
+<!--Carousel Gallery-->
+<div class="carousel-gallery">
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <a href="#gallery" data-fancybox="gallery">
+                  <div class="image" style="background-image: url(https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                      </div>
+                  </div>
+              </a>
           </div>
-        </div>
-      </div> -->
+          <div class="swiper-slide">
+              <a href="#gallery" data-fancybox="gallery">
+                  <div class="image" style="background-image: url(https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                          
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#gallery" data-fancybox="gallery">
+                  <div class="image" style="background-image: url(https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                          
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#gallery" data-fancybox="gallery">
+                  <div class="image" style="background-image: url(https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#gallery" data-fancybox="gallery">
+                  <div class="image" style="background-image: url(https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">  
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="swiper-slide">
+              <a href="#gallery" data-fancybox="gallery">
+                  <div class="image" style="background-image: url(https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                      <div class="overlay">
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
+  </div>
+</div>
     </section>
     <!-- GAllERY -->
   </body>
   <!-- partial -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script><script  src="./script.js"></script>
   <script src="./js/script.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
