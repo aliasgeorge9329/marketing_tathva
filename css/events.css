@@ -21,6 +21,31 @@
   line-height: 80px;
 }
 
+#events-section .modal .txt-title {
+  line-height: 1.5em;
+}
+
+#events-section .modal .modal-body {
+  display: grid;
+}
+
+#events-section .modal-body,
+.modal-header,
+.modal-footer {
+  background-color: black;
+}
+#events-section .modal .modal-body p {
+  padding: 10%;
+  font-size: 1.1rem;
+}
+#events-section .modal .modal-body img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 2%;
+}
+
 @media screen and (min-width: 300px) {
   #events-section .contain {
     display: grid;
@@ -89,6 +114,10 @@
     line-height: 20px;
     text-align: center;
     font-size: 14px;
+  }
+  #events-section .modal .modal-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 }
 
@@ -199,6 +228,11 @@
   #events-section .contain {
     width: 1080px;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #events-section .modal .modal-body {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
   }
 }
 
