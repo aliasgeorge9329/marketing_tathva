@@ -10,6 +10,7 @@
   background-size: cover;
   /* margin-left: 90px; */
   margin-top: 25px;
+  padding-bottom: 30px;
 }
 #frontpage .main-heading {
   color: white;
@@ -54,36 +55,11 @@
     display: inline;
     z-index: 1;
     margin-left: 50px;
+    width: 40%;
   }
 
-  #frontpage .top-heading {
-    font-family: "Clash Display", sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 4px;
-  }
-
-  #frontpage .top-heading2 {
-    margin-top: 0px;
-    color: gray;
-    font-size: 1rem;
-    font-family: "Courier New", Courier, monospace;
-  }
   #frontpage .top-sec {
-    position: relative;
-    top: -20px;
-    /* left: 60px;  */
-    width: 50px;
-    display: inline-block;
-  }
-  #frontpage .top-head-logo {
-    display: inline-block;
-    width: 50px;
-  }
-  #frontpage .top-head-words {
-    display: inline-block;
-    margin-left: 10px;
+    width: 20%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -111,36 +87,11 @@
     display: inline;
     z-index: 1;
     margin-left: 30px;
-  }
-
-  #frontpage .top-heading {
-    font-family: "Clash Display", sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 4px;
-  }
-
-  #frontpage .top-heading2 {
-    margin-top: 0px;
-    color: gray;
-    font-size: 1rem;
-    font-family: "Courier New", Courier, monospace;
+    width: 60%;
   }
 
   #frontpage .top-sec {
-    position: relative;
-    top: -20px;
-    /* left: 60px;  */
-    width: 50px;
-    display: inline-block;
-  }
-  #frontpage .top-head-logo {
-    display: inline-block;
-    width: 50px;
-  }
-  #frontpage .top-head-words {
-    display: inline-block;
+    width: 40%;
   }
 }
 #frontpage .buttons {
@@ -172,6 +123,10 @@
   flex-direction: row;
   justify-content: space-around;
   width: 50%;
+}
+
+#frontpage .Navbar-List a {
+  text-decoration: none;
 }
 #frontpage .top {
   display: flex;
@@ -220,7 +175,7 @@
 #frontpage .main-logo {
   width: 45%;
   height: 50%;
-  margin-left: 35px;
+  margin-left: 55px;
   margin-top: 80px;
 }
 #frontpage .main-div {
@@ -269,7 +224,7 @@
     position: absolute;
     top: 80px;
     /* bottom: 1000px; */
-    height: 40%;
-    width: 50%;
+    height: 50%;
+    width: 60%;
   }
 }
