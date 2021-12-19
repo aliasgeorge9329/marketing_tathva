@@ -3,6 +3,22 @@
 .bg-very-dark {
   background-color: #151515;
 }
+
+#events-section .mainhead {
+  margin-left: 11%;
+  font-size: 3rem;
+  margin-bottom: 80px;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  #events-section .mainhead {
+    margin-left: 20px;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    font-weight: bold;
+  }
+}
+
 #events-section {
   margin-bottom: 200px;
   padding-bottom: 50px;

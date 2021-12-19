@@ -29,10 +29,10 @@
   #sponsor .words {
     color: rgb(155, 154, 154);
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 30px;
     right: 10px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 

@@ -12,6 +12,10 @@
   margin-top: 25px;
   padding-bottom: 30px;
 }
+
+#frontpage .offcanvas {
+  background: rgb(0, 0, 0);
+}
 #frontpage .main-heading {
   color: white;
   font-family: "Clash Display", sans-serif;
@@ -19,13 +23,15 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
-#frontpage li {
+#frontpage .nav-item a {
   color: gray;
   list-style-type: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: "General Sans", sans-serif;
   font-weight: bold;
+  margin: 0 20px;
 }
+
 #frontpage .main-content {
   color: rgb(184, 183, 183);
   font-size: 1.5rem;
@@ -51,21 +57,20 @@
     margin-top: 50px;
   }
 
-  #frontpage .top-head {
-    display: inline;
-    z-index: 1;
-    margin-left: 50px;
-    width: 40%;
-  }
-
   #frontpage .top-sec {
-    width: 20%;
+    width: 200px;
+    margin-left: 30px;
   }
 }
+
 @media screen and (max-width: 768px) {
   #frontpage .mains h1,
   p {
     margin-left: 20px;
+  }
+  #frontpage .nav-item a,
+  .offcanvas-title {
+    color: white;
   }
   #frontpage .mains {
     display: flex;
@@ -83,15 +88,9 @@
     margin-left: 20px;
   }
 
-  #frontpage .top-head {
-    display: inline;
-    z-index: 1;
-    margin-left: 30px;
-    width: 60%;
-  }
-
   #frontpage .top-sec {
-    width: 40%;
+    width: 100px;
+    margin-left: 30px;
   }
 }
 #frontpage .buttons {
@@ -182,7 +181,14 @@
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1330px) and (min-width: 1210px) {
+  #frontpage .icons {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1210px) {
   #frontpage .top {
     display: flex;
     justify-content: flex-start;
@@ -193,7 +199,7 @@
   }
   #frontpage .main-heading {
     display: flex;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: bold;
   }
   #frontpage .icons {
@@ -203,7 +209,7 @@
   #frontpage .main-div {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 400px;
   }
   #frontpage .buttons {
     width: 120px;
@@ -213,8 +219,8 @@
     width: 300px;
   }
   #frontpage .main-content {
-    width: 300px;
-    font-size: 1rem;
+    width: 700px;
+    font-size: 1.5rem;
   }
   #frontpage .buttons {
     font-size: 1rem;
@@ -222,9 +228,83 @@
 
   #frontpage .main-logo {
     position: absolute;
-    top: 40px;
+    top: 80px;
+    left: 40px;
     /* bottom: 1000px; */
-    height: 50%;
-    width: 65%;
+    height: 65%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #frontpage .top {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  #frontpage .Navbar-List {
+    display: none;
+  }
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  #frontpage .icons {
+    position: absolute;
+    margin-right: -30px;
+  }
+  #frontpage .main-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+  }
+  #frontpage .buttons {
+    width: 120px;
+    height: 40px;
+  }
+  #frontpage .button-div {
+    width: 300px;
+  }
+  #frontpage .main-content {
+    width: 400px;
+    font-size: 1.3rem;
+  }
+  #frontpage .buttons {
+    font-size: 1rem;
+  }
+
+  #frontpage .main-logo {
+    position: absolute;
+    top: 100px;
+    /* bottom: 1000px; */
+    height: 55%;
+    width: 52%;
+  }
+  #frontpage .nav-item a,
+  .offcanvas-title {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  #frontpage .main-content {
+    width: 300px;
+    font-size: 1rem;
+  }
+
+  #frontpage .main-logo {
+    position: absolute;
+    top: 80px;
+    left: -20px;
+    height: 52%;
+    width: 64%;
+    z-index: 0;
   }
 }
