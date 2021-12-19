@@ -222,9 +222,9 @@
 
   #frontpage .main-logo {
     position: absolute;
-    top: 80px;
+    top: 40px;
     /* bottom: 1000px; */
     height: 50%;
-    width: 60%;
+    width: 65%;
   }
 }
