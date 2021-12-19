@@ -91,7 +91,7 @@
 #onlinetathva ul.slides {
   display: block;
   position: relative;
-  height: 600px;
+  height: 400px;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -182,8 +182,8 @@ ul.slides input {
 
 .carousel-dots .carousel-dot {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.5;

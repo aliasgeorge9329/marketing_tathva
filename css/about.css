@@ -1,9 +1,9 @@
 /* ABOUT */
 #about {
-  padding: 60px 120px;
   margin-top: 100px;
   margin-bottom: 80px;
   background: rgb(53, 0, 255);
+  padding-bottom: 40px;
   background: linear-gradient(
       0deg,
       rgba(91, 0, 255, 0.9) 0%,
@@ -21,11 +21,13 @@
     color: white;
     margin-bottom: 40px;
   }
+
   #about p {
     color: gray;
     line-height: 2.4rem;
-    font-size: 150%;
+    font-size: 1.5rem;
   }
+
   #about .about-img {
     width: 300px;
     margin-left: 40px;
@@ -33,28 +35,32 @@
 }
 
 @media only screen and (max-width: 990px) {
-  #about .row {
-    width: 300px;
-    margin-left: 0;
-  }
-
   #about h1 {
     font-weight: bold;
     color: white;
     margin-bottom: 40px;
+    margin-left: 10px;
+    font-size: 2rem;
   }
-  #about p {
+  /* #about p {
     color: gray;
     line-height: 1.8rem;
     font-size: 20px;
     position: relative;
     left: -100px;
+  } */
+
+  #about p {
+    color: gray;
+    line-height: 2.4rem;
+    font-size: 120%;
+    padding: 10px;
   }
 
   #about .about-img {
-    width: 50%;
-    margin: 30px 30% 0;
-    position: relative;
-    left: -100px;
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
   }
 }
