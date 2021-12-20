@@ -19,57 +19,53 @@
 
     <script type="text/javascript">
       //after window is loaded completely
-      document.write('<style>#full-content { display:none; } </style>');
-      window.onload = function(){
-       //Remove the preloader
-       
-       document.querySelector("#windowloader").remove();
-       $("#preloader").attr("disabled", "disabled");
-       
-       $("#full-content").css("visibility","visible");
-       $("#full-content").css("display","none");
-        
-       $("#full-content").fadeIn(1200);
-       AOS.init();
-       
+      document.write("<style>#full-content { display:none; } </style>");
+      window.onload = function () {
+        //Remove the preloader
+        document.querySelector("#windowloader").remove();
+        $("#preloader").attr("disabled", "disabled");
 
-       var swiper = new Swiper(".carousel-gallery .swiper-container", {
-    effect: "slide",
-    speed: 900,
-    slidesPerView: 4,
-    spaceBetween: 20,
-    simulateTouch: true,
-    autoplay: {
-      delay: 5000,
-      stopOnLastSlide: false,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".carousel-gallery .swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      // when window width is <= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 5,
-      },
-      // when window width is <= 480px
-      425: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      // when window width is <= 640px
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-  });
-  }
+        $("#full-content").css("visibility", "visible");
+        $("#full-content").css("display", "none");
 
-  </script>  
+        $("#full-content").fadeIn(1200);
+        AOS.init();
 
+        var swiper = new Swiper(".carousel-gallery .swiper-container", {
+          effect: "slide",
+          speed: 900,
+          slidesPerView: 4,
+          spaceBetween: 20,
+          simulateTouch: true,
+          autoplay: {
+            delay: 5000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".carousel-gallery .swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            // when window width is <= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 5,
+            },
+            // when window width is <= 480px
+            425: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            // when window width is <= 640px
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+          },
+        });
+      };
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -80,7 +76,25 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/frontpage.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"
+    />
+
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/css?f[]=clash-display@300&f[]=general-sans@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/frontpage.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/events.css" />
@@ -89,1014 +103,1364 @@
     <link rel="stylesheet" href="./css/sponsor.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-    
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="https://api.fontshare.com/css?f[]=clash-display@300&f[]=general-sans@200&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- LOADER -->
-         <div id="windowloader">
-          <div class="wrapper">
-            <div class="circle circle2"></div>
-          </div>
-        </div>
+    <div id="windowloader">
+      <div class="wrapper">
+        <div class="circle circle2"></div>
+      </div>
+    </div>
     <!-- LOADER -->
 
     <div id="full-content">
-     <!-- FRONT PAGE -->
-     <section id="frontpage">
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./images/frontpage/logo.png" alt="" class="top-sec">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvasNavbar" aria-controls="offcanvasNavbar">
-            <img src="./images/fabars.png" style="width: 105%;" alt="">
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="canvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tathva 2021</h5>
-              <button type="button" class="text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"/></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="background: none transparent;">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#frontpage">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#events-section">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#onlinetathva">Sponsors</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#gallery-section">Gallery</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <ul class="icons" data-aos="fade-left" data-aos-duration="3000">
-        <li><a href="https://www.facebook.com/tathva" target="blank" style="width: 30px; height: 30px;"><img src="./images/frontpage/facebook.png" alt="facebook" style="height: 20px; width: 20px;"></a></li>
-        <li><a href="https://www.instagram.com/tathva_nitcalicut/" target="blank"><img src="./images/frontpage/instagram.png" alt="instagram"></a></li>
-        <li><a href="https://www.linkedin.com/company/tathva-nit-calicut/" target="blank"><img src="./images/frontpage/linkedin.png" alt="linkedin"></a></li>
-        <li><a href="https://www.youtube.com/user/tathvanit/featured" target="blank"><img src="./images/frontpage/youtube.png" alt="youtube"></a></li>
-      </ul>
-      <div class="main-div">
-        <div class="mains">
-          <h1 class="main-heading">Tathva 2021</h1>
-          <p class="main-content"> We started out as a brainchild of a few curious minds; Now, we are an emotion carried by those in and out of the college. Designate yourself as the supporter of this techno-managerial festival</p>
-          <div data-aos="fade-up"
-           class="button-div">
-            <button class="buttons button1" href="#contact">
-              <a href="#contact" class="buttons button1" style="text-decoration: none;" > Contact Us</a>
-            </button>
-            <button class="buttons button2">
-              <a href="https://online.flippingbook.com/view/893547156/" target="blank" class="buttons button2" style="text-decoration: none;" >Brochure</a> 
-            </button>
-          </div>
-        </div>
-        <img src="./images/frontpage/i5.png" alt="tathva-logo" class="main-logo">
-      </div>
-     </section>
       <!-- FRONT PAGE -->
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container">
-        <h1 data-aos="fade-up-right">About</h1>
-        <div class="row">
-          <div class="col-lg-8">
-            <p>
-              The early years of this century saw some aspiring students garner
-              around in the hope to behold the seeds of ideas that sprouted in
-              their minds take life before them. This resulted in one of the
-              south India's biggest scholastic endeavours - Tathva, the techno -
-              management fest of NIT Calicut. Since it's inception in 2000, this
-              annual symposium has known only growth, and has flourished into
-              one of the few promising enterprises the nation has witnessed.
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <img class="about-img" src="./images/about.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ABOUT -->
-    <!-- EVENTS -->
-    <section id="events-section" class="palette-min-alt">
-      <div class="mainhead">
-      <h1 data-aos="fade-up-left">
-        Events
-      </h1></div>
-      <div class="contain">
-        <div 
-          class="card card-full hvr-grow"
-          data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#adizya-modal"
-          style="background-image: url('images/events/grid-adizya.jpg')"
-        >
-          <div class="triangle triangle-bottom-right"></div>
-          <div class="textarea textarea-bottom-right">
-            <h3 class="txt txt-subhead txt-light">ADIZYA</h3>
-            <p class="txt txt-body txt-light">
-              Creative platform for architects and planners
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="card card-full hvr-grow"
-          data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#interface-modal"
-          style="background-image: url('images/events/grid-interface.jpg')"
-        >
-          <div class="triangle triangle-top-right"></div>
-          <div class="textarea textarea-top-right">
-            <h3 class="txt txt-subhead txt-light">INTERFACE</h3>
-            <p class="txt txt-body txt-light">
-              Kerala's largest startup summit
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-          data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#wheels-modal"
-          style="background-image: url('images/events/wheels.jpg')"
-        >
-          <div class="triangle triangle-bottom-left"></div>
-          <div class="textarea textarea-bottom-left">
-            <h3 class="txt txt-subhead txt-light">WHEELS</h3>
-            <p class="txt txt-body txt-light">
-              One of the biggest gathering of automobile enthusiasts from south
-              India
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-         data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#proshow-modal"
-          style="background-image: url('images/events/proshow-blue.jpg')"
-        >
-          <div class="triangle triangle-top-left"></div>
-          <div class="textarea textarea-top-left">
-            <h3 class="txt txt-subhead txt-light">PROSHOWS</h3>
-            <p class="txt txt-body txt-light">
-              Proshows steal the limelight throughout the days
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-          data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#aavishkar-modal"
-          style="background-image: url('images/events/grid-aavishkar.jpg')"
-        >
-          <div class="triangle triangle-bottom-right"></div>
-          <div class="textarea textarea-bottom-right">
-            <h3 class="txt txt-subhead txt-light">AAVISHKAR</h3>
-            <p class="txt txt-body txt-light">
-              The social initiative of Tathva
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-          data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#workshops-modal"
-          style="background-image: url('images/events/workshop.jpg')"
-        >
-          <div class="triangle triangle-top-right"></div>
-          <div class="textarea textarea-top-right">
-            <h3 class="txt txt-subhead txt-light">WORKSHOPS</h3>
-            <p class="txt txt-body txt-light">
-              Get hands on experience in technologies
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-         data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#exhib-modal"
-          style="background-image: url('images/events/exhibition.jpg')"
-        >
-          <div class="triangle triangle-top-right"></div>
-          <div class="textarea textarea-top-right">
-            <h3 class="txt txt-subhead txt-light">EXHIBITIONS</h3>
-            <p class="txt txt-body txt-light">
-              Exhibitions personify the year around work and enthusiasm of our
-              young minds.
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-          data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#blitz-modal"
-          style="background-image: url('images/events/gaming.jpg')"
-        >
-          <div class="triangle triangle-bottom-left"></div>
-          <div class="textarea textarea-bottom-left">
-            <h3 class="txt txt-subhead txt-light">BLITZKRIEG</h3>
-            <p class="txt txt-body txt-light">
-              Ultimate paradise for the gaming community
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-          data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#informal-modal"
-          style="background-image: url('images/events/rajpath.jpg')"
-        >
-          <div class="triangle triangle-top-left"></div>
-          <div class="textarea textarea-top-left">
-            <h3 class="txt txt-subhead txt-light">INFORMALS</h3>
-            <p class="txt txt-body txt-light">
-              Embodiment of the true nature of the tech fest Tathva
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-         data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#lectures-modal"
-          style="background-image: url('images/events/lecture-highq.jpg')"
-        >
-          <div class="triangle triangle-top-left"></div>
-          <div class="textarea textarea-top-left">
-            <h3 class="txt txt-subhead txt-light">LECTURES</h3>
-            <p class="txt txt-body txt-light">
-              Experience the chants of the tech-gurus
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-         data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#samasya-modal"
-          style="background-image: url('images/events/samasya.jpg')"
-        >
-          <div class="triangle triangle-bottom-right"></div>
-          <div class="textarea textarea-bottom-right">
-            <h3 class="txt txt-subhead txt-light">SAMASYA</h3>
-            <p class="txt txt-body txt-light">
-              Unique quizzing session where young quizzers test their mettle
-              against each other
-            </p>
-          </div>
-        </div>
-        <div
-          class="card card-full hvr-grow"
-         data-aos="zoom-in-up"
-          data-bs-toggle="modal" data-bs-target="#zeroattempt-modal"
-          style="background-image: url('images/events/zeroth.jpeg')"
-        >
-          <div class="triangle triangle-top-right"></div>
-          <div class="textarea textarea-top-right">
-            <h3 class="txt txt-subhead txt-light">Zeroth attempt</h3>
-            <p class="txt txt-body txt-light">
-              Our mock JEE test series, conducted and evaluated by NIT Calicut
-            </p>
-          </div>
-        </div>
-      </div>
-
-<!-- MODAL SECTION -->
-      <div class="modal fade" id="wheels-modal">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Wheels</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/wheels1.jpg"/>
-        <p class="txt-dark txt txt-body">
-        Float like a Cadillac, Sting like a Beemer. Drive not to save time, drive to have a good time. Witness one of the biggest gathering of automobile enthusiasts from south India display a breathtaking range of customized exotic rides in WHEELS!
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="lectures-modal">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Lectures</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/lecture1.jpg" />
-        <p class="txt-dark txt txt-body">
-        Delve into the enigmas of the science era by being a part of the Tathva lectures. Lend your ears to the talks that enrapture the tech-savvy souls. This is where proficiency and deliverance entwines and brings theories to startle your boggling neurons. Experience the chants of the tech-gurus. </p>
-        </div>
-        
-        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="exhib-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Exhibitions</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/exhibition1.jpg" />
-        <p class="txt-dark txt txt-body">
-        The mind boggling puzzles laid out by the Club Mathematica, innovative projects put forth by the different branches and the assortment of robots, cars and planes presented by our zealous technical clubs are just tip of the iceberg of the true spirit embodied within the Tathva. Apart from being a platform to exhibit the essence of each club, the Exhibitions personify the year around work and enthusiasm of our young minds.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="proshow-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Proshows</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/proshow1.jpg" />
-        <p class="txt-dark txt txt-body">
-        Shimmering lights, reverberating rhythms, they add to the glee and glory of the nights of the technical extravaganza,Tathva. Years down, the stage has been set for the renowned voices of the industry. Being the nights that enthrall the crowd, Proshows steal the limelight throughout the days. It is a show to behold, a glance to get.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="interface-modal">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Interface</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/gallery/11.jpg" />
-        <p class="txt-dark txt txt-body">
-        Go to website - <a href="../external.html?link=https://interface.tathva.org/">interface.tathva.org</a><br><br>
-        Over the past few years Interface has changed the landscape for young entrepreneurs in South India by providing a platform to implement their ingenious ideas. Interface begins with a mentoring weekend ahead of the Tathva Interface in which the selected teams interact with their mentors. The Tathva Interface brings in the events including workshops, pitching, panel discussions and talks from some of the most successful entrepreneurs in India. Interface continues to be the face of student ingenuity and dedication and its certain that its bright flame is not going to burn up any time soon.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="blitz-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Blitzkrieg</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/gaming1.jpg" />
-         <p class="txt-dark txt txt-body">
-        Blitzkrieg, present by Tathva'18, is a testament of how versatile the gaming junkies of Kerala are. Taking things to the next level, it was the ultimate paradise for the gaming community. From football to shooter games, the adrenaline could be felt coursing through the air. It is definitely one for the books!
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="samasya-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Samasya</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/samasya1.jpg" />
-        <p class="txt-dark txt txt-body">
-        Conducted by Enquire Quiz club, Samasya School Quiz is an attempt to reach out to schools, presenting them a unique quizzing session where young quizzers can test their mettle against each other. With prelims conducted across different venues in the state and huge participation every year it is definitely Kerala's biggest quizzing event. Selected teams then compete in the most fiery battle of brains in the state finals. Being one of the most enthralling events of Tathva, Samasya proves as a crowd puller every year.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="aavishkar-modal">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Aavishkar</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/aavishkar.jpg" />
-        <p class="txt-dark txt txt-body">
-        The social initiative of Tathva was established to extend a compassionate helping hand to the less fortunate. By focusing on alleviating the sufferings of the weaker sessions of the society, to uplift and empower them, AAVISHKAAR became a grand success in the past few years.
-        <br>
-        Well-planned and comprehensive programmes in healthcare and education are conducted every year by this brainchild of Tathva.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="adizya-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Adizya</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/adizya1.jpg" />
-        <p class="txt-dark txt txt-body">
-        Accompanied by a grand website launch, the works of craft and colors on the canvas were successful in attracting the crowd Adizya well deserved. Encouraging creative minds to let their imagination flow in a number of open participation events, educating them through multiple lectures by men of repute and through the exhibition itself it accomplished it's vision and left an undeniably beautiful mark in our memories.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="informal-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Informals</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/rajpath.jpg" />
-        <p class="txt-dark txt txt-body">
-        The informals, presented by tathva 18' is the embodiment of the true nature of the tech fest Tathva. These series of various events held at random locations on the Campus held the wonder and bewilderment of the audience. The folks will return, with no less exuberance hoping for the next informals!
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-
-
-        <div class="modal fade" id="zeroattempt-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Zeroth attempt</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/zeroth.jpeg" />
-        <p class="txt-dark txt txt-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, facere enim quibusdam fugiat ad ut numquam officia blanditiis. Doloribus reiciendis laborum debitis alias soluta id est quod magnam nostrum recusandae.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <div class="modal fade" id="workshops-modal">
-          <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-        
-        <div class="modal-header">
-        <h4 class="modal-title txt-dark txt txt-title">Workshops</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        
-        <div class="modal-body">
-        <img src="./images/events/workshop1.jpg" />
-        <p class="txt-dark txt txt-body">
-        While succumbing to the daily trials of this ever-changing world, many a time we let go of the opportunities to immerse ourselves into the beauty of science and industries rapidly advancing all around us. From analyzing the intricacies of the commercial world to delving into the fast paced changes in AI, our pragmatic workshops can transform seemingly morbid ideas to exciting industrial avenues. Come and partake in this fiasco of active knowledge and discover more.
-        </p>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-        </div>
-<!--MODAL SECTION -->
-    </section>
-    <!-- EVENTS -->
-    <!-- ONLINE TATHVA -->
-    <section id="onlinetathva">
-      <div class="container">
-        <h1 class="onlinetathva-heading" data-aos="zoom-in-right">Online Tathva</h1>
-        <div class="row">
-          <div class="col-lg-6">
-            <p>
-              Even though the pandemic gripped the whole world, Tathva never
-              lost its glory. We conducted various lectures with prominent
-              speakers like the Nobel laureate, Sir Anthony Legget, Padma Shri
-              winner, Dr. Rajagopala Chidambaram, etc and two days workshops
-              each on different technology relevant topics like Cryptocurrency,
-              Augmented reality, Data Science, Ethical Hacking, Full-stack
-              development, Deep Learning and SEO. Even in online mode, the
-              lectures had a footfall of around 200 participants.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div>
-              <div class="carousel">
-                <ul class="slides">
-                  <input type="radio" name="radio-buttons" id="img-1" checked />
-                  <li class="slide-container">
-                    <div class="slide-image">
-                      <img
-                        src="./images/onlinetathva/1.jpg"
-                      />
-                    </div>
-                    <div class="carousel-controls">
-                      <label for="img-3" class="prev-slide">
-                        <span>&lsaquo;</span>
-                      </label>
-                      <label for="img-2" class="next-slide">
-                        <span>&rsaquo;</span>
-                      </label>
-                    </div>
+      <section id="frontpage">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./images/frontpage/logo.png" alt="" class="top-sec" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#canvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <img src="./images/fabars.png" style="width: 105%" alt="" />
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="canvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Tathva 2021
+                </h5>
+                <button
+                  type="button"
+                  class="text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <img
+                    src="https://img.icons8.com/material-outlined/24/000000/delete-sign.png"
+                  />
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                  style="background: none transparent"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#frontpage"
+                      >Home</a
+                    >
                   </li>
-                  <input type="radio" name="radio-buttons" id="img-2" />
-                  <li class="slide-container">
-                    <div class="slide-image">
-                      <img
-                        src="./images/onlinetathva/2.jpg"
-                      />
-                    </div>
-                    <div class="carousel-controls">
-                      <label for="img-1" class="prev-slide">
-                        <span>&lsaquo;</span>
-                      </label>
-                      <label for="img-3" class="next-slide">
-                        <span>&rsaquo;</span>
-                      </label>
-                    </div>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about"
+                      >About</a
+                    >
                   </li>
-                  <input type="radio" name="radio-buttons" id="img-3" />
-                  <li class="slide-container">
-                    <div class="slide-image">
-                      <img
-                        src="./images/onlinetathva/3.jpg"
-                      />
-                    </div>
-                    <div class="carousel-controls">
-                      <label for="img-2" class="prev-slide">
-                        <span>&lsaquo;</span>
-                      </label>
-                      <label for="img-1" class="next-slide">
-                        <span>&rsaquo;</span>
-                      </label>
-                    </div>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#events-section"
+                      >Events</a
+                    >
                   </li>
-                  <div class="carousel-dots">
-                    <label
-                      for="img-1"
-                      class="carousel-dot"
-                      id="img-dot-1"
-                    ></label>
-                    <label
-                      for="img-2"
-                      class="carousel-dot"
-                      id="img-dot-2"
-                    ></label>
-                    <label
-                      for="img-3"
-                      class="carousel-dot"
-                      id="img-dot-3"
-                    ></label>
-                  </div>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#onlinetathva"
+                      >Sponsors</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#contact"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#gallery-section"
+                      >Gallery</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row" style="margin-bottom: 200px;">
-          <div class="col-lg-6">
-            <div class="whysponsor">
-            <span>
-              <div class="whysponserus"data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500">Why Sponsor<br>us?</div> 
-            </span>
-          </div>
-          </div>
-          <div class="col-lg-6">
-            <p>
-              Tathva, the five day fiesta, attracts tech-wits and creative
-              minds from over 900 colleges across the nation,
-              flowing in to test their capabilities and
-              have an enthralling and fruitful time. Countless heads turn this way
-              during Tathva, hoping to become a part of an endeavor that is nerve-
-              racking and filled with euphoria, all at once.
-              <br>
-              Being a part of Tathva gives you a chance to associate yourselves
-              with The National Institute of Technology, Calicut ranked 28th
-              national wide, and thereby build an everlasting relationship with
-              the institution, an unavoidable part of Kerala history.
+        </nav>
+        <ul class="icons" data-aos="fade-left" data-aos-duration="3000">
+          <li>
+            <a
+              href="https://www.facebook.com/tathva"
+              target="blank"
+              style="width: 30px; height: 30px"
+              ><img
+                src="./images/frontpage/facebook.png"
+                alt="facebook"
+                style="height: 20px; width: 20px"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/tathva_nitcalicut/"
+              target="blank"
+              ><img src="./images/frontpage/instagram.png" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/tathva-nit-calicut/"
+              target="blank"
+              ><img src="./images/frontpage/linkedin.png" alt="linkedin"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/tathvanit/featured"
+              target="blank"
+              ><img src="./images/frontpage/youtube.png" alt="youtube"
+            /></a>
+          </li>
+        </ul>
+        <div class="main-div">
+          <div class="mains">
+            <h1 class="main-heading">Tathva 2021</h1>
+            <p class="main-content">
+              We started out as a brainchild of a few curious minds; Now, we are
+              an emotion carried by those in and out of the college. Designate
+              yourself as the supporter of this techno-managerial festival
             </p>
+            <div data-aos="fade-up" class="button-div">
+              <button class="buttons button1" href="#contact">
+                <a
+                  href="#contact"
+                  class="buttons button1"
+                  style="text-decoration: none"
+                >
+                  Contact Us</a
+                >
+              </button>
+              <button class="buttons button2">
+                <a
+                  href="https://online.flippingbook.com/view/893547156/"
+                  target="blank"
+                  class="buttons button2"
+                  style="text-decoration: none"
+                  >Brochure</a
+                >
+              </button>
+            </div>
+          </div>
+          <img
+            src="./images/frontpage/i5.png"
+            alt="tathva-logo"
+            class="main-logo"
+          />
         </div>
-      </div>
-    </section>
-    <!-- ONLINE TATHVA -->
-    <!-- SPONSOR -->
-    <section id="sponsor">
-      <h1 style="color: white; margin-top: 50px; text-align: center">
-        Here's why you should consider investing in Tathva
-      </h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg">
-            <div class="content">
-              <div class="backgradient">
-                <div class="frontcard">
-                  <div class="words">
-                    <h2>Active presence in Media</h2>
-                    <p>
-                      Provision for maximum publicity through all
-the social media platforms, having a reach
-of over 50K
-                    </p>
-                  </div>
-                </div>
-              </div>
+      </section>
+      <!-- FRONT PAGE -->
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <h1 data-aos="fade-up-right">About</h1>
+          <div class="row">
+            <div class="col-lg-8">
+              <p>
+                The early years of this century saw some aspiring students
+                garner around in the hope to behold the seeds of ideas that
+                sprouted in their minds take life before them. This resulted in
+                one of the south India's biggest scholastic endeavours - Tathva,
+                the techno - management fest of NIT Calicut. Since it's
+                inception in 2000, this annual symposium has known only growth,
+                and has flourished into one of the few promising enterprises the
+                nation has witnessed.
+              </p>
             </div>
-          </div>
-          <div class="col-lg">
-            <div class="content">
-              <div class="backgradient">
-                <div class="frontcard">
-                  <div class="words">
-                    <h2>Tathva Stalls</h2>
-                    <p>
-                      Well executed stalls and kiosks, providing a
-                      juncture to exhibit products and display-
-                      promotional events, for the targeted
-                      masses
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg">
-            <div class="content">
-              <div class="backgradient">
-                <div class="frontcard">
-                  <div class="words">
-                    <h2>Video Ads and Interactive <br>
-                      Sessions</h2>
-                    <p>
-                      Maximum promotion of the brand through
-provision for video advertisements and
-interactive sessions
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="content">
-              <div class="backgradient">
-                <div class="frontcard">
-                  <div class="words">
-                    <h2>Posters and T-shirts</h2>
-                    <p>
-                      Posters making it's way to over 900
-                      colleges across the nation and event
-                      posters circulating in Calicut city
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-4">
+              <img class="about-img" src="./images/about.jpg" alt="" />
             </div>
           </div>
         </div>
-      </div>
-      <div class="desciption">
-        <h1>And more</h1>
-        <p>Sales of Tathva official t-shirts and other merchandise</p>
-        <p>Innovative advertising techniques to promote sponsors</p>
-        <p>
-          An eternal association with National Institute of Technology Calicut
-        </p>
-      </div>
-      <div class="previous-sponsor">
-        <h1 data-aos="zoom-in">
-          Previous sponsors
-        </h1>
+      </section>
+      <!-- ABOUT -->
+      <!-- EVENTS -->
+      <section id="events-section" class="palette-min-alt">
+        <div class="mainhead">
+          <h1 data-aos="fade-up-left">Events</h1>
+        </div>
+        <div class="contain">
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#adizya-modal"
+            style="background-image: url('images/events/grid-adizya.jpg')"
+          >
+            <div class="triangle triangle-bottom-right"></div>
+            <div class="textarea textarea-bottom-right">
+              <h3 class="txt txt-subhead txt-light">ADIZYA</h3>
+              <p class="txt txt-body txt-light">
+                Creative platform for architects and planners
+              </p>
+            </div>
+          </div>
 
-        <img src="./images/sponsor1.jpg" alt="" />
-        <img src="./images/sponsor2.jpg" alt=""/>
-      </div>
-    </section>
-    <!-- SPONSOR -->
-    <!-- CONTACT -->
-    <section id="contact">
-      <h1 data-aos="zoom-in-down"
-        style="
-          color: white;
-          margin-top: 150px;
-          text-align: center;
-          font-size: 4rem;
-          margin-bottom: 100px;
-        "
-      >
-        Contact Us
-      </h1>
-      <p
-        style="
-          color: gray;
-          margin-top: 100px;
-          font-size: 2.5rem;
-          margin-bottom: 100px;
-        "
-      >
-        Marketing executives
-      </p>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="contactcard">
-              <img src="./images/contact/jijo.jpg" style="width: 50%" alt="" />
-              <p>Jijo Ponnachan<br />+919061122489</p>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#interface-modal"
+            style="background-image: url('images/events/grid-interface.jpg')"
+          >
+            <div class="triangle triangle-top-right"></div>
+            <div class="textarea textarea-top-right">
+              <h3 class="txt txt-subhead txt-light">INTERFACE</h3>
+              <p class="txt txt-body txt-light">
+                Kerala's largest startup summit
+              </p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="contactcard">
-              <img src="./images/contact/swathy.jpg" style="width: 50%" alt="" />
-              <p>Swathy Suresh B<br />+917306309258</p>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#wheels-modal"
+            style="background-image: url('images/events/wheels.jpg')"
+          >
+            <div class="triangle triangle-bottom-left"></div>
+            <div class="textarea textarea-bottom-left">
+              <h3 class="txt txt-subhead txt-light">WHEELS</h3>
+              <p class="txt txt-body txt-light">
+                One of the biggest gathering of automobile enthusiasts from
+                south India
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#proshow-modal"
+            style="background-image: url('images/events/proshow-blue.jpg')"
+          >
+            <div class="triangle triangle-top-left"></div>
+            <div class="textarea textarea-top-left">
+              <h3 class="txt txt-subhead txt-light">PROSHOWS</h3>
+              <p class="txt txt-body txt-light">
+                Proshows steal the limelight throughout the days
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#aavishkar-modal"
+            style="background-image: url('images/events/grid-aavishkar.jpg')"
+          >
+            <div class="triangle triangle-bottom-right"></div>
+            <div class="textarea textarea-bottom-right">
+              <h3 class="txt txt-subhead txt-light">AAVISHKAR</h3>
+              <p class="txt txt-body txt-light">
+                The social initiative of Tathva
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#workshops-modal"
+            style="background-image: url('images/events/workshop.jpg')"
+          >
+            <div class="triangle triangle-top-right"></div>
+            <div class="textarea textarea-top-right">
+              <h3 class="txt txt-subhead txt-light">WORKSHOPS</h3>
+              <p class="txt txt-body txt-light">
+                Get hands on experience in technologies
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#exhib-modal"
+            style="background-image: url('images/events/exhibition.jpg')"
+          >
+            <div class="triangle triangle-top-right"></div>
+            <div class="textarea textarea-top-right">
+              <h3 class="txt txt-subhead txt-light">EXHIBITIONS</h3>
+              <p class="txt txt-body txt-light">
+                Exhibitions personify the year around work and enthusiasm of our
+                young minds.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#blitz-modal"
+            style="background-image: url('images/events/gaming.jpg')"
+          >
+            <div class="triangle triangle-bottom-left"></div>
+            <div class="textarea textarea-bottom-left">
+              <h3 class="txt txt-subhead txt-light">BLITZKRIEG</h3>
+              <p class="txt txt-body txt-light">
+                Ultimate paradise for the gaming community
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#informal-modal"
+            style="background-image: url('images/events/rajpath.jpg')"
+          >
+            <div class="triangle triangle-top-left"></div>
+            <div class="textarea textarea-top-left">
+              <h3 class="txt txt-subhead txt-light">INFORMALS</h3>
+              <p class="txt txt-body txt-light">
+                Embodiment of the true nature of the tech fest Tathva
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#lectures-modal"
+            style="background-image: url('images/events/lecture-highq.jpg')"
+          >
+            <div class="triangle triangle-top-left"></div>
+            <div class="textarea textarea-top-left">
+              <h3 class="txt txt-subhead txt-light">LECTURES</h3>
+              <p class="txt txt-body txt-light">
+                Experience the chants of the tech-gurus
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#samasya-modal"
+            style="background-image: url('images/events/samasya.jpg')"
+          >
+            <div class="triangle triangle-bottom-right"></div>
+            <div class="textarea textarea-bottom-right">
+              <h3 class="txt txt-subhead txt-light">SAMASYA</h3>
+              <p class="txt txt-body txt-light">
+                Unique quizzing session where young quizzers test their mettle
+                against each other
+              </p>
+            </div>
+          </div>
+          <div
+            class="card card-full hvr-grow"
+            data-aos="zoom-in-up"
+            data-bs-toggle="modal"
+            data-bs-target="#zeroattempt-modal"
+            style="background-image: url('images/events/zeroth.jpeg')"
+          >
+            <div class="triangle triangle-top-right"></div>
+            <div class="textarea textarea-top-right">
+              <h3 class="txt txt-subhead txt-light">Zeroth attempt</h3>
+              <p class="txt txt-body txt-light">
+                Our mock JEE test series, conducted and evaluated by NIT Calicut
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- MODAL SECTION -->
+        <div class="modal fade" id="wheels-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Wheels</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/wheels1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  Float like a Cadillac, Sting like a Beemer. Drive not to save
+                  time, drive to have a good time. Witness one of the biggest
+                  gathering of automobile enthusiasts from south India display a
+                  breathtaking range of customized exotic rides in WHEELS!
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="lectures-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Lectures</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/lecture1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  Delve into the enigmas of the science era by being a part of
+                  the Tathva lectures. Lend your ears to the talks that
+                  enrapture the tech-savvy souls. This is where proficiency and
+                  deliverance entwines and brings theories to startle your
+                  boggling neurons. Experience the chants of the tech-gurus.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exhib-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Exhibitions</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/exhibition1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  The mind boggling puzzles laid out by the Club Mathematica,
+                  innovative projects put forth by the different branches and
+                  the assortment of robots, cars and planes presented by our
+                  zealous technical clubs are just tip of the iceberg of the
+                  true spirit embodied within the Tathva. Apart from being a
+                  platform to exhibit the essence of each club, the Exhibitions
+                  personify the year around work and enthusiasm of our young
+                  minds.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="proshow-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Proshows</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/proshow1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  Shimmering lights, reverberating rhythms, they add to the glee
+                  and glory of the nights of the technical extravaganza,Tathva.
+                  Years down, the stage has been set for the renowned voices of
+                  the industry. Being the nights that enthrall the crowd,
+                  Proshows steal the limelight throughout the days. It is a show
+                  to behold, a glance to get.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="interface-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Interface</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/gallery/11.jpg" />
+                <p class="txt-dark txt txt-body">
+                  Go to website -
+                  <a href="../external.html?link=https://interface.tathva.org/"
+                    >interface.tathva.org</a
+                  ><br /><br />
+                  Over the past few years Interface has changed the landscape
+                  for young entrepreneurs in South India by providing a platform
+                  to implement their ingenious ideas. Interface begins with a
+                  mentoring weekend ahead of the Tathva Interface in which the
+                  selected teams interact with their mentors. The Tathva
+                  Interface brings in the events including workshops, pitching,
+                  panel discussions and talks from some of the most successful
+                  entrepreneurs in India. Interface continues to be the face of
+                  student ingenuity and dedication and its certain that its
+                  bright flame is not going to burn up any time soon.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="blitz-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Blitzkrieg</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/gaming1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  Blitzkrieg, present by Tathva'18, is a testament of how
+                  versatile the gaming junkies of Kerala are. Taking things to
+                  the next level, it was the ultimate paradise for the gaming
+                  community. From football to shooter games, the adrenaline
+                  could be felt coursing through the air. It is definitely one
+                  for the books!
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="samasya-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Samasya</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/samasya1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  Conducted by Enquire Quiz club, Samasya School Quiz is an
+                  attempt to reach out to schools, presenting them a unique
+                  quizzing session where young quizzers can test their mettle
+                  against each other. With prelims conducted across different
+                  venues in the state and huge participation every year it is
+                  definitely Kerala's biggest quizzing event. Selected teams
+                  then compete in the most fiery battle of brains in the state
+                  finals. Being one of the most enthralling events of Tathva,
+                  Samasya proves as a crowd puller every year.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="aavishkar-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Aavishkar</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/aavishkar.jpg" />
+                <p class="txt-dark txt txt-body">
+                  The social initiative of Tathva was established to extend a
+                  compassionate helping hand to the less fortunate. By focusing
+                  on alleviating the sufferings of the weaker sessions of the
+                  society, to uplift and empower them, AAVISHKAAR became a grand
+                  success in the past few years.
+                  <br />
+                  Well-planned and comprehensive programmes in healthcare and
+                  education are conducted every year by this brainchild of
+                  Tathva.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="adizya-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Adizya</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/adizya1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  Accompanied by a grand website launch, the works of craft and
+                  colors on the canvas were successful in attracting the crowd
+                  Adizya well deserved. Encouraging creative minds to let their
+                  imagination flow in a number of open participation events,
+                  educating them through multiple lectures by men of repute and
+                  through the exhibition itself it accomplished it's vision and
+                  left an undeniably beautiful mark in our memories.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="informal-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Informals</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/rajpath.jpg" />
+                <p class="txt-dark txt txt-body">
+                  The informals, presented by tathva 18' is the embodiment of
+                  the true nature of the tech fest Tathva. These series of
+                  various events held at random locations on the Campus held the
+                  wonder and bewilderment of the audience. The folks will
+                  return, with no less exuberance hoping for the next informals!
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="zeroattempt-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">
+                  Zeroth attempt
+                </h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/zeroth.jpeg" />
+                <p class="txt-dark txt txt-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, facere enim quibusdam fugiat ad ut numquam officia
+                  blanditiis. Doloribus reiciendis laborum debitis alias soluta
+                  id est quod magnam nostrum recusandae.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="workshops-modal">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title txt-dark txt txt-title">Workshops</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <img src="./images/events/workshop1.jpg" />
+                <p class="txt-dark txt txt-body">
+                  While succumbing to the daily trials of this ever-changing
+                  world, many a time we let go of the opportunities to immerse
+                  ourselves into the beauty of science and industries rapidly
+                  advancing all around us. From analyzing the intricacies of the
+                  commercial world to delving into the fast paced changes in AI,
+                  our pragmatic workshops can transform seemingly morbid ideas
+                  to exciting industrial avenues. Come and partake in this
+                  fiasco of active knowledge and discover more.
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--MODAL SECTION -->
+      </section>
+      <!-- EVENTS -->
+      <!-- ONLINE TATHVA -->
+      <section id="onlinetathva">
+        <div class="container">
+          <h1 class="onlinetathva-heading" data-aos="zoom-in-right">
+            Online Tathva
+          </h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>
+                Even though the pandemic gripped the whole world, Tathva never
+                lost its glory. We conducted various lectures with prominent
+                speakers like the Nobel laureate, Sir Anthony Legget, Padma Shri
+                winner, Dr. Rajagopala Chidambaram, etc and two days workshops
+                each on different technology relevant topics like
+                Cryptocurrency, Augmented reality, Data Science, Ethical
+                Hacking, Full-stack development, Deep Learning and SEO. Even in
+                online mode, the lectures had a footfall of around 200
+                participants.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div>
+                <div class="carousel">
+                  <ul class="slides">
+                    <input
+                      type="radio"
+                      name="radio-buttons"
+                      id="img-1"
+                      checked
+                    />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="./images/onlinetathva/1.jpg" />
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-3" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-2" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="./images/onlinetathva/2.jpg" />
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-1" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-3" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="./images/onlinetathva/3.jpg" />
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-2" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-1" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <div class="carousel-dots">
+                      <label
+                        for="img-1"
+                        class="carousel-dot"
+                        id="img-dot-1"
+                      ></label>
+                      <label
+                        for="img-2"
+                        class="carousel-dot"
+                        id="img-dot-2"
+                      ></label>
+                      <label
+                        for="img-3"
+                        class="carousel-dot"
+                        id="img-dot-3"
+                      ></label>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 200px">
+            <div class="col-lg-6">
+              <div class="whysponsor">
+                <span>
+                  <div
+                    class="whysponserus"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
+                    Why Sponsor<br />us?
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p>
+                Tathva, the five day fiesta, attracts tech-wits and creative
+                minds from over 900 colleges across the nation, flowing in to
+                test their capabilities and have an enthralling and fruitful
+                time. Countless heads turn this way during Tathva, hoping to
+                become a part of an endeavor that is nerve- racking and filled
+                with euphoria, all at once.
+                <br />
+                Being a part of Tathva gives you a chance to associate
+                yourselves with The National Institute of Technology, Calicut
+                ranked 28th national wide, and thereby build an everlasting
+                relationship with the institution, an unavoidable part of Kerala
+                history.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ONLINE TATHVA -->
+      <!-- SPONSOR -->
+      <section id="sponsor">
+        <h1 style="color: white; margin-top: 50px; text-align: center">
+          Here's why you should consider investing in Tathva
+        </h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <div class="content">
+                <div class="backgradient">
+                  <div class="frontcard">
+                    <div class="words">
+                      <h2>Active presence in Media</h2>
+                      <p>
+                        Provision for maximum publicity through all the social
+                        media platforms, having a reach of over 50K
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="content">
+                <div class="backgradient">
+                  <div class="frontcard">
+                    <div class="words">
+                      <h2>Tathva Stalls</h2>
+                      <p>
+                        Well executed stalls and kiosks, providing a juncture to
+                        exhibit products and display- promotional events, for
+                        the targeted masses
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <div class="content">
+                <div class="backgradient">
+                  <div class="frontcard">
+                    <div class="words">
+                      <h2>
+                        Video Ads and Interactive <br />
+                        Sessions
+                      </h2>
+                      <p>
+                        Maximum promotion of the brand through provision for
+                        video advertisements and interactive sessions
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="content">
+                <div class="backgradient">
+                  <div class="frontcard">
+                    <div class="words">
+                      <h2>Posters and T-shirts</h2>
+                      <p>
+                        Posters making it's way to over 900 colleges across the
+                        nation and event posters circulating in Calicut city
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desciption">
+          <h1>And more</h1>
+          <p>Sales of Tathva official t-shirts and other merchandise</p>
+          <p>Innovative advertising techniques to promote sponsors</p>
+          <p>
+            An eternal association with National Institute of Technology Calicut
+          </p>
+        </div>
+        <div class="previous-sponsor">
+          <h1 data-aos="zoom-in">Previous sponsors</h1>
+
+          <img src="./images/sponsor1.jpg" alt="" />
+          <img src="./images/sponsor2.jpg" alt="" />
+        </div>
+      </section>
+      <!-- SPONSOR -->
+      <!-- CONTACT -->
+      <section id="contact">
+        <h1
+          data-aos="zoom-in-down"
+          style="
+            color: white;
+            margin-top: 150px;
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 100px;
+          "
+        >
+          Contact Us
+        </h1>
         <p
           style="
             color: gray;
-            margin-top: 50px;
+            margin-top: 100px;
             font-size: 2.5rem;
             margin-bottom: 100px;
           "
         >
-          Event coordinators
+          Marketing executives
         </p>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="contactcard">
-              <img src="./images/contact/archith.jpg" style="width: 50%" alt="" />
-              <p>Archith G<br />+917306292197</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="contactcard">
-              <img src="./images/contact/abbad.jpg" style="width: 50%" alt="" />
-              <p>Abbad Maliyekkal<br />+918943992992</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CONTACT -->
-    <!-- GAllERY -->
-    <section id="gallery-section">
-      <h1 data-aos="zoom-out-up"
-        style="
-          color: white;
-          margin-top: 150px;
-          margin-bottom: 100px;
-          text-align: center;
-          font-size: 4rem;
-        "
-      >
-        Gallery
-      </h1>
-<!--Carousel Gallery-->
-<div class="carousel-gallery">
-  <div class="swiper-container">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide">
-              <a href="#gallery" data-fancybox="gallery">
-                  <div class="image" style="background-image: url(./images/gallery/1.jpg)">
-                      <div class="overlay">
-                      </div>
-                  </div>
-              </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#gallery" data-fancybox="gallery">
-                <div class="image" style="background-image: url(./images/gallery/2.jpg)">
-                    <div class="overlay">
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#gallery" data-fancybox="gallery">
-              <div class="image" style="background-image: url(./images/gallery/3.jpg)">
-                  <div class="overlay">
-                  </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contactcard">
+                <img
+                  src="./images/contact/jijo.jpg"
+                  style="width: 50%"
+                  alt=""
+                />
+                <p>Jijo Ponnachan<br />+919061122489</p>
               </div>
-          </a>
-      </div>
-      <div class="swiper-slide">
-        <a href="#gallery" data-fancybox="gallery">
-            <div class="image" style="background-image: url(./images/gallery/4.jpg)">
-                <div class="overlay">
-                </div>
             </div>
-        </a>
+            <div class="col-lg-6">
+              <div class="contactcard">
+                <img
+                  src="./images/contact/swathy.jpg"
+                  style="width: 50%"
+                  alt=""
+                />
+                <p>Swathy Suresh B<br />+917306309258</p>
+              </div>
+            </div>
+          </div>
+          <p
+            style="
+              color: gray;
+              margin-top: 50px;
+              font-size: 2.5rem;
+              margin-bottom: 100px;
+            "
+          >
+            Event coordinators
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contactcard">
+                <img
+                  src="./images/contact/archith.jpg"
+                  style="width: 50%"
+                  alt=""
+                />
+                <p>Archith G<br />+917306292197</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contactcard">
+                <img
+                  src="./images/contact/abbad.jpg"
+                  style="width: 50%"
+                  alt=""
+                />
+                <p>Abbad Maliyekkal<br />+918943992992</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <!-- GAllERY -->
+      <section id="gallery-section">
+        <h1
+          data-aos="zoom-out-up"
+          style="
+            color: white;
+            margin-top: 150px;
+            margin-bottom: 100px;
+            text-align: center;
+            font-size: 4rem;
+          "
+        >
+          Gallery
+        </h1>
+        <!--Carousel Gallery-->
+        <div class="carousel-gallery">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/1.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/2.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/3.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/4.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/5.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/6.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/7.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/8.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/9.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/10.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/11.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/12.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/13.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/14.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#gallery" data-fancybox="gallery">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/gallery/15.jpg)"
+                  >
+                    <div class="overlay"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- GAllERY -->
+
+      <a href="javascript:" id="return-to-top"
+        ><i class="icon-chevron-up"></i
+      ></a>
     </div>
-    <div class="swiper-slide">
-      <a href="#gallery" data-fancybox="gallery">
-          <div class="image" style="background-image: url(./images/gallery/5.jpg)">
-              <div class="overlay">
-              </div>
-          </div>
-      </a>
-  </div>
-  <div class="swiper-slide">
-    <a href="#gallery" data-fancybox="gallery">
-        <div class="image" style="background-image: url(./images/gallery/6.jpg)">
-            <div class="overlay">
-            </div>
-        </div>
-    </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/7.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/8.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/9.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/10.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/11.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/12.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/13.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-<div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/14.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div><div class="swiper-slide">
-  <a href="#gallery" data-fancybox="gallery">
-      <div class="image" style="background-image: url(./images/gallery/15.jpg)">
-          <div class="overlay">
-          </div>
-      </div>
-  </a>
-</div>
-
-
-          
-      </div>
-      <div class="swiper-pagination"></div>
-  </div>
-</div>
-    </section>
-    <!-- GAllERY -->
-    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-  </div>
   </body>
   <!-- partial -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
-  
+
   <script src="./js/script.js"></script>
 </html>

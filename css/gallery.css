@@ -1,8 +1,8 @@
 /*Carousel Gallery*/
-.carousel-gallery {
+/* .carousel-gallery {
   margin: 50px 0;
   padding: 0 30px;
-}
+} */
 .swiper-slide {
   box-shadow: -1px -5px 15px 3px blue;
   filter: drop-shadow(5px 13px 12px blue);
