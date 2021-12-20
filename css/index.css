@@ -1,9 +1,11 @@
 html {
   overflow-x: hidden;
 }
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
   background-color: black;
   overflow-x: hidden;
+  font-family: "Inter", sans-serif;
 }
 #return-to-top {
   position: fixed;

@@ -1,5 +1,4 @@
 /* ABOUT */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 #about {
   margin-top: 100px;
   margin-bottom: 80px;
@@ -13,7 +12,6 @@
     url("../images/frontcard1.jpeg");
   background-size: 40%;
   background-size: cover;
-  font-family: "Inter", sans-serif;
 }
 
 @media only screen and (min-width: 990px) {
@@ -27,7 +25,7 @@
   #about p {
     color: gray;
     line-height: 2.4rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   #about .about-img {
@@ -54,8 +52,8 @@
 
   #about p {
     color: gray;
-    line-height: 2.4rem;
-    font-size: 120%;
+    line-height: 2.2rem;
+    font-size: 100%;
     padding: 10px;
   }
 

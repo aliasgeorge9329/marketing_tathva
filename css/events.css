@@ -76,7 +76,7 @@
     position: relative;
     border: none;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 10px;
     cursor: pointer;
   }
   #events-section .contain .card-short {
