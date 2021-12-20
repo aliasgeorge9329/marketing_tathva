@@ -177,13 +177,13 @@
   flex-direction: row;
 }
 
-@media screen and (max-width: 1330px) and (min-width: 1210px) {
+@media screen and (max-width: 1500px) and (min-width: 1210px) {
   #frontpage .icons {
     visibility: hidden;
   }
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1350px) {
   #frontpage .top {
     display: flex;
     justify-content: flex-start;
@@ -226,68 +226,17 @@
     top: 80px;
     left: 40px;
     /* bottom: 1000px; */
-    height: 65%;
+    height: 60%;
     width: 50%;
   }
 }
 
-@media screen and (max-width: 990px) {
-  #frontpage .top {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-  }
-  #frontpage .Navbar-List {
-    display: none;
-  }
+@media screen and (max-width: 900px) {
   #frontpage .main-heading {
     display: flex;
     font-size: 3rem;
     font-weight: bold;
-  }
-  #frontpage .icons {
-    position: absolute;
-    margin-right: -30px;
-  }
-  #frontpage .main-div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 300px;
-  }
-  #frontpage .buttons {
-    width: 120px;
-    height: 40px;
-  }
-  #frontpage .button-div {
-    width: 300px;
-  }
-  #frontpage .main-content {
-    width: 400px;
-    font-size: 1.3rem;
-  }
-  #frontpage .buttons {
-    font-size: 1rem;
-  }
-
-  #frontpage .main-logo {
-    position: absolute;
-    top: 100px;
-    /* bottom: 1000px; */
-    height: 55%;
-    width: 52%;
-  }
-  #frontpage .nav-item a,
-  .offcanvas-title {
-    color: white;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #frontpage .main-heading {
-    display: flex;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   #frontpage .main-content {
@@ -297,19 +246,64 @@
 
   #frontpage .main-logo {
     position: absolute;
-    top: 80px;
+    /* top: 60px; */
     left: -20px;
     height: 52%;
     width: 73%;
-    z-index: 0;
+    z-index: 2;
   }
 
   #frontpage .icons {
     position: absolute;
     margin-right: -45px;
+    z-index: 3;
   }
 }
 
+@media screen and (max-width: 500px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-top: -10px; */
+  }
+
+  #frontpage .mains {
+    margin-top: 180px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 300px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-top: -10px; */
+  }
+
+  #frontpage .mains {
+    margin-top: 8.5rem;
+    margin-bottom: 10px;
+  }
+
+  #frontpage .main-logo {
+    height: 40%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 300px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-top: -10px; */
+  }
+
+  #frontpage .mains {
+    margin-top: 160px;
+    margin-bottom: 10px;
+  }
+}
 .btn-shine {
   padding-right: 100px;
   color: #fff;
