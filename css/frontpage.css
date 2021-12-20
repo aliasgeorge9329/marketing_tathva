@@ -7,10 +7,6 @@
   padding-bottom: 30px;
 }
 
-#frontpage .offcanvas {
-  background: rgb(0, 0, 0);
-}
-
 #frontpage .offcanvas-end {
   width: 250px;
 }
@@ -89,6 +85,9 @@
   #frontpage .top-sec {
     width: 100px;
     margin-left: 30px;
+  }
+  #frontpage .offcanvas {
+    background: rgb(0, 0, 0);
   }
 }
 #frontpage .buttons {

@@ -33,3 +33,9 @@ $(function () {
     },
   }); /*http://idangero.us/swiper/api/*/
 });
+
+var navbar = $(".navbar");
+$(window).resize(function () {
+  if (window.innerWidth <= 600) navbar.addClass("fixed-top");
+  else navbar.removeClass("fixed-top");
+});
