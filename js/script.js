@@ -33,3 +33,7 @@ $(function () {
     },
   }); /*http://idangero.us/swiper/api/*/
 });
+
+$("text-reset").click(function () {
+  $(".offcanvas").hide();
+});

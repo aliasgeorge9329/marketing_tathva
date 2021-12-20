@@ -16,6 +16,10 @@
 #frontpage .offcanvas {
   background: rgb(0, 0, 0);
 }
+
+#frontpage .offcanvas-end {
+  width: 250px;
+}
 #frontpage .main-heading {
   color: white;
   font-family: "Clash Display", sans-serif;
@@ -292,6 +296,7 @@
     display: flex;
     font-size: 3rem;
     font-weight: bold;
+    margin-top: -80px;
   }
 
   #frontpage .main-content {
@@ -304,7 +309,7 @@
     top: 80px;
     left: -20px;
     height: 52%;
-    width: 64%;
+    width: 69%;
     z-index: 0;
   }
 }
