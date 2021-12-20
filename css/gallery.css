@@ -76,6 +76,7 @@
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  background-color: white;
 }
 .carousel-gallery .swiper-pagination .swiper-pagination-bullet:hover {
   opacity: 0.7;
