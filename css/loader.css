@@ -1,0 +1,35 @@
+#windowloader {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+#windowloader .wrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#windowloader .circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: rotate 2.5s linear infinite;
+}
+
+/* ==== Animation  ====  */
+#windowloader .circle2 {
+  box-shadow: 0px 5px 5px 3px #0496ff;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

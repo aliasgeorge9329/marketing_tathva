@@ -11,6 +11,10 @@
     />
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <title>Tathva 2021</title>
+
+    <link rel="stylesheet" href="./css/loader.css" id="preloader" />
+
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -22,11 +26,10 @@
       crossorigin="anonymous"
     />
 
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    
     <link rel="stylesheet" href="./css/frontpage.css">
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/about.css" />
@@ -38,8 +41,16 @@
     <link rel="stylesheet" href="./css/gallery.css" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="https://api.fontshare.com/css?f[]=clash-display@300&f[]=general-sans@200&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body >
+     <!-- LOADER -->
+        <div id="windowloader">
+          <div class="wrapper">
+            <div class="circle circle2"></div>
+          </div>
+        </div>
+    <!-- LOADER -->
      <!-- FRONT PAGE -->
      <section id="frontpage">
       <nav class="navbar navbar-expand-lg ">
@@ -135,7 +146,7 @@
       <div class="contain">
         <div 
           class="card card-full hvr-grow"
-        data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#adizya-modal"
           style="background-image: url('images/events/grid-adizya.jpg')"
         >
@@ -150,7 +161,7 @@
 
         <div
           class="card card-full hvr-grow"
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#interface-modal"
           style="background-image: url('images/events/grid-interface.jpg')"
         >
@@ -164,7 +175,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#wheels-modal"
           style="background-image: url('images/events/wheels.jpg')"
         >
@@ -179,7 +190,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-         data-aos="fade-up"
+         data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#proshow-modal"
           style="background-image: url('images/events/proshow-blue.jpg')"
         >
@@ -193,7 +204,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#aavishkar-modal"
           style="background-image: url('images/events/grid-aavishkar.jpg')"
         >
@@ -207,7 +218,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#workshops-modal"
           style="background-image: url('images/events/workshop.jpg')"
         >
@@ -221,7 +232,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-         data-aos="fade-up"
+         data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#exhib-modal"
           style="background-image: url('images/events/exhibition.jpg')"
         >
@@ -236,7 +247,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#blitz-modal"
           style="background-image: url('images/events/gaming.jpg')"
         >
@@ -250,7 +261,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#informal-modal"
           style="background-image: url('images/events/rajpath.jpg')"
         >
@@ -264,7 +275,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-         data-aos="fade-up"
+         data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#lectures-modal"
           style="background-image: url('images/events/lecture-highq.jpg')"
         >
@@ -278,7 +289,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-         data-aos="fade-up"
+         data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#samasya-modal"
           style="background-image: url('images/events/samasya.jpg')"
         >
@@ -293,7 +304,7 @@
         </div>
         <div
           class="card card-full hvr-grow"
-         data-aos="fade-up"
+         data-aos="zoom-in-up"
           data-bs-toggle="modal" data-bs-target="#zeroattempt-modal"
           style="background-image: url('images/events/lecture-highq.jpg')"
         >
@@ -942,12 +953,18 @@ interactive sessions
     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
   </body>
   <!-- partial -->
+  <script>
+    //after window is loaded completely 
+    window.onload = function(){
+     //Remove the preloader
+     document.querySelector("#windowloader").remove();
+     $("#preloader").attr("disabled", "disabled");
+     AOS.init();
+ }
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script>
@@ -958,10 +975,6 @@ interactive sessions
     crossorigin="anonymous"
   ></script>
   <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script>
-    function hello(){
-      $(".offcanvas").hide();
-    }
-  </script>
 </html>

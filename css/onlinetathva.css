@@ -41,6 +41,11 @@
     font-size: 3rem;
     font-weight: bold;
   }
+  #onlinetathva .slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 70%;
+  }
 }
 @media screen and (max-width: 990px) {
   #onlinetathva .whysponsor {
@@ -68,6 +73,11 @@
     font-size: 3rem;
     font-weight: bold;
   }
+  #onlinetathva .slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 60%;
+  }
 }
 #onlinetathva p {
   font-size: 1.3rem;
@@ -80,12 +90,28 @@
     position: relative;
     top: -100px;
   }
+  .carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    z-index: 999;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 990px) {
   #onlinetathva .carousel {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 20px;
+  }
+  .carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 180px;
+    z-index: 999;
+    text-align: center;
   }
 }
 #onlinetathva ul.slides {
@@ -123,12 +149,6 @@ ul.slides input {
   top: 0;
   opacity: 0;
   transition: all 0.7s ease-in-out;
-}
-
-.slide-image img {
-  width: auto;
-  min-width: 100%;
-  height: 60%;
 }
 
 .carousel-controls {
@@ -169,15 +189,6 @@ ul.slides input {
   width: 49%;
   text-align: right;
   right: 0;
-}
-
-.carousel-dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 180px;
-  z-index: 999;
-  text-align: center;
 }
 
 .carousel-dots .carousel-dot {

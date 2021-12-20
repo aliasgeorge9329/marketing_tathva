@@ -6,10 +6,10 @@
   padding-bottom: 40px;
   background: linear-gradient(
       0deg,
-      rgba(91, 0, 255, 0.9) 0%,
+      rgba(91, 0, 255, 0.7) 0%,
       rgba(0, 0, 0, 0.9) 75%
     ),
-    url("../images/frontcard.jpeg");
+    url("../images/frontcard1.jpeg");
   background-size: 40%;
   background-size: cover;
 }
