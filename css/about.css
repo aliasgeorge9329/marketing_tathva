@@ -16,7 +16,7 @@
 
 @media only screen and (min-width: 990px) {
   #about h1 {
-    font-size: 400%;
+    font-size: 4rem;
     font-weight: bold;
     color: white;
     margin-bottom: 40px;
@@ -39,8 +39,8 @@
     font-weight: bold;
     color: white;
     margin-bottom: 40px;
-    margin-left: 10px;
-    font-size: 2rem;
+    margin-left: 20px;
+    font-size: 3.5rem;
   }
   /* #about p {
     color: gray;
