@@ -1,5 +1,9 @@
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 #return-to-top {
   position: fixed;
@@ -45,4 +49,12 @@ body {
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+  }
 }

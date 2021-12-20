@@ -1,4 +1,5 @@
 /* ABOUT */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 #about {
   margin-top: 100px;
   margin-bottom: 80px;
@@ -12,6 +13,7 @@
     url("../images/frontcard1.jpeg");
   background-size: 40%;
   background-size: cover;
+  font-family: "Inter", sans-serif;
 }
 
 @media only screen and (min-width: 990px) {
