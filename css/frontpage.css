@@ -312,4 +312,9 @@
     width: 69%;
     z-index: 0;
   }
+
+  #frontpage .icons {
+    position: absolute;
+    margin-right: -45px;
+  }
 }
