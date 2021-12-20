@@ -13,22 +13,66 @@
     <title>Tathva 2021</title>
 
     <link rel="stylesheet" href="./css/loader.css" id="preloader" />
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      
-    <script>
-    document.write('<style>body { display: none; } </style>');
-      //after window is loaded completely 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   
+    <script type="text/javascript">
+      //after window is loaded completely
+      document.write('<style>#full-content { display:none; } </style>');
       window.onload = function(){
        //Remove the preloader
+       
        document.querySelector("#windowloader").remove();
-       jQuery("body").css("visibility","visible");
-    jQuery("body").css("display","none");
-    jQuery("body").fadeIn(1200);
        $("#preloader").attr("disabled", "disabled");
-       AOS.init();
+      
+       $("#full-content").css("visibility","visible");
+       $("#full-content").css("display","none");
+       $("#full-content").fadeIn(1200);
+       AOS.init(); 
+
+       var swiper = new Swiper(".carousel-gallery .swiper-container", {
+    effect: "slide",
+    speed: 900,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    simulateTouch: true,
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".carousel-gallery .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+      // when window width is <= 480px
+      425: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      // when window width is <= 640px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+
    }
-  </script>
-  
+  </script>  
+
+
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -41,9 +85,11 @@
     />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://api.fontshare.com/css?f[]=clash-display@300&f[]=general-sans@200&display=swap" rel="stylesheet">
+  
     <link rel="stylesheet" href="./css/frontpage.css">
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/about.css" />
@@ -53,18 +99,20 @@
     <link rel="stylesheet" href="./css/sponsor.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="https://api.fontshare.com/css?f[]=clash-display@300&f[]=general-sans@200&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-     <!-- LOADER -->
-     <div id="windowloader">
-      <div class="wrapper">
-        <div class="circle circle2"></div>
-      </div>
-    </div>
-<!-- LOADER -->
+  
   <body>
+         
+    <!-- LOADER -->
+         <div id="windowloader">
+          <div class="wrapper">
+            <div class="circle circle2"></div>
+          </div>
+        </div>
+    <!-- LOADER -->
+
+
+    <div id="full-content">
      <!-- FRONT PAGE -->
      <section id="frontpage">
       <nav class="navbar navbar-expand-lg ">
@@ -966,22 +1014,19 @@ interactive sessions
     </section>
     <!-- GAllERY -->
     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+  </div>
   </body>
   <!-- partial -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script>
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  
   <script src="./js/script.js"></script>
-
-
 </html>
