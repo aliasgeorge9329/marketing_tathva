@@ -1,11 +1,12 @@
 body {
   background-color: black;
-  overflow-x: hidden;
 }
 #return-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  /* background: rgb(204, 0, 255); */
+  /* background: rgba(255, 21, 243, 0.7); */
   background: linear-gradient(
     0deg,
     rgb(190, 29, 253) 48%,
@@ -24,7 +25,6 @@ body {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  z-index: 4;
 }
 #return-to-top i {
   color: #fff;
@@ -40,7 +40,7 @@ body {
   transition: all 0.3s ease;
 }
 #return-to-top:hover {
-  background: rgba(255, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
   color: #fff;

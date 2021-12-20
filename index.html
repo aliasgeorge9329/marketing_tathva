@@ -22,6 +22,7 @@
       document.write("<style>#full-content { display:none; } </style>");
       window.onload = function () {
         //Remove the preloader
+
         document.querySelector("#windowloader").remove();
         $("#preloader").attr("disabled", "disabled");
 
@@ -66,6 +67,7 @@
         });
       };
     </script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -76,6 +78,15 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/frontpage.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/events.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/onlinetathva.css" />
+    <link rel="stylesheet" href="./css/sponsor.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
 
     <link
       rel="stylesheet"
@@ -94,15 +105,6 @@
       href="https://api.fontshare.com/css?f[]=clash-display@300&f[]=general-sans@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/frontpage.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/about.css" />
-    <link rel="stylesheet" href="./css/events.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/onlinetathva.css" />
-    <link rel="stylesheet" href="./css/sponsor.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/gallery.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -117,7 +119,7 @@
     <div id="full-content">
       <!-- FRONT PAGE -->
       <section id="frontpage">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="./images/frontpage/logo.png" alt="" class="top-sec" />
@@ -1444,7 +1446,6 @@
         </div>
       </section>
       <!-- GAllERY -->
-
       <a href="javascript:" id="return-to-top"
         ><i class="icon-chevron-up"></i
       ></a>
