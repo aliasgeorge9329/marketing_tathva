@@ -309,3 +309,50 @@
     margin-right: -45px;
   }
 }
+
+.btn-shine {
+  padding-right: 100px;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    #4d4d4d 0,
+    rgb(255, 220, 21) 10%,
+    #4d4d4d 20%
+  );
+  background-position: -20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -10px;
+  }
+  50% {
+    background-position: 260px;
+  }
+  100% {
+    background-position: 260px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 530px;
+    }
+    100% {
+      background-position: 530px;
+    }
+  }
+}
