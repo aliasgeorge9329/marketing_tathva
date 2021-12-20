@@ -13,7 +13,21 @@
     <title>Tathva 2021</title>
 
     <link rel="stylesheet" href="./css/loader.css" id="preloader" />
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+    <script>
+    document.write('<style>body { display: none; } </style>');
+      //after window is loaded completely 
+      window.onload = function(){
+       //Remove the preloader
+       document.querySelector("#windowloader").remove();
+       jQuery("body").css("visibility","visible");
+    jQuery("body").css("display","none");
+    jQuery("body").fadeIn(1200);
+       $("#preloader").attr("disabled", "disabled");
+       AOS.init();
+   }
+  </script>
   
     <link
       rel="stylesheet"
@@ -43,14 +57,14 @@
     <link href="https://api.fontshare.com/css?f[]=clash-display@300&f[]=general-sans@200&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body >
      <!-- LOADER -->
-        <div id="windowloader">
-          <div class="wrapper">
-            <div class="circle circle2"></div>
-          </div>
-        </div>
-    <!-- LOADER -->
+     <div id="windowloader">
+      <div class="wrapper">
+        <div class="circle circle2"></div>
+      </div>
+    </div>
+<!-- LOADER -->
+  <body>
      <!-- FRONT PAGE -->
      <section id="frontpage">
       <nav class="navbar navbar-expand-lg ">
@@ -954,15 +968,7 @@ interactive sessions
     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
   </body>
   <!-- partial -->
-  <script>
-    //after window is loaded completely 
-    window.onload = function(){
-     //Remove the preloader
-     document.querySelector("#windowloader").remove();
-     $("#preloader").attr("disabled", "disabled");
-     AOS.init();
- }
-</script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
@@ -976,6 +982,6 @@ interactive sessions
     crossorigin="anonymous"
   ></script>
   <script src="./js/script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </html>
