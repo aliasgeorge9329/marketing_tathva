@@ -74,9 +74,9 @@
     font-weight: bold;
   }
   #onlinetathva .slide-image img {
-    width: auto;
+    width: 100%;
     min-width: 100%;
-    height: 60%;
+    height: 50%;
   }
 }
 #onlinetathva p {
@@ -109,7 +109,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 180px;
+    bottom: 200px;
     z-index: 999;
     text-align: center;
   }

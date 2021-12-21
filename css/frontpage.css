@@ -10,7 +10,13 @@
   position: fixed;
   right: 19px;
 }
-
+#frontpage .fabars {
+  width: 7%;
+  position: fixed;
+  right: 20px;
+  top: 35px;
+  z-index: 4;
+}
 #frontpage .offcanvas-end {
   width: 250px;
 }
@@ -22,7 +28,7 @@
   font-weight: bold;
 }
 #frontpage .nav-item a {
-  color: gray;
+  color: white;
   list-style-type: none;
   font-size: 1.4rem;
   font-family: "General Sans", sans-serif;
@@ -233,8 +239,8 @@
     top: 80px;
     left: 40px;
     /* bottom: 1000px; */
-    height: 60%;
-    width: 50%;
+    height: 55%;
+    width: 45%;
   }
 }
 
