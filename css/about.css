@@ -24,8 +24,8 @@
 
   #about p {
     color: gray;
-    line-height: 2.4rem;
-    font-size: 1.4rem;
+    line-height: 2.3rem;
+    font-size: 1.2rem;
   }
 
   #about .about-img {
@@ -42,18 +42,11 @@
     margin-left: 20px;
     font-size: 3.5rem;
   }
-  /* #about p {
-    color: gray;
-    line-height: 1.8rem;
-    font-size: 20px;
-    position: relative;
-    left: -100px;
-  } */
 
   #about p {
     color: gray;
     line-height: 2.2rem;
-    font-size: 100%;
+    font-size: 1.1rem;
     padding: 10px;
   }
 

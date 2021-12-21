@@ -1,0 +1,179 @@
+@media screen and (max-width: 1500px) and (min-width: 1350px) {
+  #frontpage .icons {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #frontpage .top {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  #frontpage .Navbar-List {
+    display: none;
+  }
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  #frontpage .icons {
+    position: absolute;
+    margin-right: -30px;
+  }
+  #frontpage .main-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+  }
+  #frontpage .buttons {
+    width: 120px;
+    height: 40px;
+  }
+  #frontpage .button-div {
+    width: 300px;
+  }
+  #frontpage .main-content {
+    width: 700px;
+    font-size: 1.5rem;
+  }
+  #frontpage .buttons {
+    font-size: 1rem;
+  }
+  /* #frontpage .mains {
+      margin-top: 21rem;
+      margin-bottom: 10px;
+    } */
+  #frontpage .mains {
+    margin-top: 9rem;
+  }
+  #frontpage .main-logo {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    /* bottom: 1000px; */
+    height: 55%;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1210px) and (min-width: 900px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  #frontpage .main-logo {
+    height: 30rem;
+    width: 30rem;
+  }
+  #frontpage .mains {
+    margin-top: 9rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* #frontpage .main-heading {
+      display: flex;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-top: 40px;
+    } */
+
+  #frontpage .main-content {
+    width: 80%;
+    font-size: 1.6rem;
+  }
+
+  #frontpage .main-logo {
+    position: absolute;
+    /* top: 60px; */
+    left: -20px;
+    height: 52%;
+    width: 73%;
+    z-index: 2;
+  }
+
+  #frontpage .icons {
+    position: absolute;
+    margin-right: -45px;
+    z-index: 3;
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 500px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 8rem;
+  }
+  #frontpage .main-logo {
+    height: 40%;
+    width: 60%;
+  }
+
+  #frontpage .mains {
+    margin-top: 9rem;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-top: -10px; */
+  }
+  #frontpage .main-logo {
+    height: 25rem;
+    width: 25rem;
+  }
+  #frontpage .mains {
+    margin-top: 180px;
+    margin-bottom: 10px;
+  }
+  #frontpage .main-content {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 300px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-top: -10px; */
+  }
+  #frontpage .main-logo {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    /* height: 52%; */
+    width: 20rem;
+    z-index: 2;
+  }
+  #frontpage .main-content {
+    width: 80%;
+    font-size: 1rem;
+  }
+  #frontpage .mains {
+    margin-top: 9.4rem;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #frontpage .main-heading {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-top: -10px; */
+  }
+
+  #frontpage .mains {
+    margin-top: 160px;
+    margin-bottom: 10px;
+  }
+}

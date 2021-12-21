@@ -65,12 +65,20 @@
             },
           },
         });
+        if (window.innerWidth <= 1200) $(".col-xl-5").addClass("order-last");
+        else $(".col-xl-5").removeClass("order-last");
       };
     </script>
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -118,7 +126,7 @@
     <div id="full-content">
       <!-- FRONT PAGE -->
       <section id="frontpage">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-xl">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="./images/frontpage/logo.png" alt="" class="top-sec" />
@@ -242,40 +250,49 @@
             /></a>
           </li>
         </ul>
-        <div class="main-div">
-          <div class="mains">
-            <h1 class="main-heading btn-shine">Tathva 2021</h1>
-            <p class="main-content">
-              We started out as a brainchild of a few curious minds; Now, we are
-              an emotion carried by those in and out of the college. Designate
-              yourself as the supporter of this techno-managerial festival
-            </p>
-            <div data-aos="fade-up" class="button-div">
-              <button class="buttons button1" href="#contact">
-                <a
-                  href="#contact"
-                  class="buttons button1"
-                  style="text-decoration: none"
-                >
-                  Contact Us</a
-                >
-              </button>
-              <button class="buttons button2">
-                <a
-                  href="https://online.flippingbook.com/view/893547156/"
-                  target="blank"
-                  class="buttons button2"
-                  style="text-decoration: none; color: white"
-                  >Brochure</a
-                >
-              </button>
+
+        <div class="container-fluid frontmaincontent">
+          <div class="row">
+            <div class="col-xl-5 frontcontainer frontcontainer-2">
+              <div class="mains">
+                <h1 class="main-heading btn-shine">Tathva 2021</h1>
+                <p class="main-content">
+                  What started as the brainchild of a few curious minds is now
+                  an emotion carried by those in and out of the college!
+                  Designate yourself as a supporter of this techno-managerial
+                  festival.
+                </p>
+                <div class="button-div">
+                  <button class="buttons button1" href="#contact">
+                    <a
+                      href="#contact"
+                      class="buttons button1"
+                      style="text-decoration: none"
+                    >
+                      Contact Us</a
+                    >
+                  </button>
+                  <button class="buttons button2" style="margin-left: 30px">
+                    <a
+                      href="https://online.flippingbook.com/view/893547156/"
+                      target="blank"
+                      class="buttons button2"
+                      style="text-decoration: none; color: white"
+                      >Brochure</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-7 frontcontainer">
+              <img
+                src="./images/frontpage/i5.png"
+                alt="tathva-logo"
+                class="main-logo"
+              />
             </div>
           </div>
-          <img
-            src="./images/frontpage/i5.png"
-            alt="tathva-logo"
-            class="main-logo"
-          />
         </div>
       </section>
       <!-- FRONT PAGE -->
@@ -289,11 +306,26 @@
                 The early years of this century saw some aspiring students
                 garner around in the hope to behold the seeds of ideas that
                 sprouted in their minds take life before them. This resulted in
-                one of the south India's biggest scholastic endeavours - Tathva,
-                the techno - management fest of NIT Calicut. Since it's
-                inception in 2000, this annual symposium has known only growth,
-                and has flourished into one of the few promising enterprises the
-                nation has witnessed.
+                one of south India's biggest scholastic endeavours - Tathva, the
+                techno-management fest of NIT Calicut. Since its inception in
+                2000, this annual symposium has known only growth and has
+                flourished into one of the most promising events the nation has
+                witnessed. <br />
+                Pushing the barriers year after year, Tathva aims at providing a
+                plethora of platforms to the intrigued technical heads that
+                arrive at this fiesta with an array of events and workshops to
+                sharpen their skills and widen their knowledge quotient. With
+                the engine up and roaring, Tathva' 21 is all set to embark on a
+                new expedition, proffering opportunities and paving trails to
+                greater comprehension. From being in awe of the top-notch
+                robotic & automobile display and the adrenaline rush while
+                racing against time and competing with some of the tech-wired
+                geniuses out there, to the ecstatic ambience of the pronites,
+                Tathva has it all covered for its audience. With Adizya
+                displaying an impressive arena for art lovers and designing
+                heads, we call out to all the right and left brains alike. Come,
+                embark on this journey with us, and let's drift away from
+                normalcy and let the magic seep into our souls.
               </p>
             </div>
             <div class="col-lg-4">
@@ -513,10 +545,11 @@
               <div class="modal-body">
                 <img src="./images/events/wheels1.jpg" />
                 <p class="txt-dark txt txt-body">
-                  Float like a Cadillac, Sting like a Beemer. Drive not to save
+                  Float like a Cadillac, Sting like a Beemer! Drive not to save
                   time, drive to have a good time. Witness one of the biggest
-                  gathering of automobile enthusiasts from south India display a
-                  breathtaking range of customized exotic rides in WHEELS!
+                  gatherings of automobile enthusiasts from South India which
+                  display a breathtaking range of customized exotic rides in
+                  WHEELS!
                 </p>
               </div>
 
@@ -550,11 +583,11 @@
               <div class="modal-body">
                 <img src="./images/events/lecture1.jpg" />
                 <p class="txt-dark txt txt-body">
-                  Delve into the enigmas of the science era by being a part of
-                  the Tathva lectures. Lend your ears to the talks that
-                  enrapture the tech-savvy souls. This is where proficiency and
-                  deliverance entwines and brings theories to startle your
-                  boggling neurons. Experience the chants of the tech-gurus.
+                  Delve into the enigmas of the scientific era by becoming a
+                  part of the Tathva lectures. Lend your ears to talks that
+                  awe-inspire tech-savvy souls. This is where proficiency and
+                  deliverance intertwine and theories that boggle your neurons
+                  are explained. Experience the chants of the tech-gurus.
                 </p>
               </div>
 
@@ -588,14 +621,15 @@
               <div class="modal-body">
                 <img src="./images/events/exhibition1.jpg" />
                 <p class="txt-dark txt txt-body">
-                  The mind boggling puzzles laid out by the Club Mathematica,
-                  innovative projects put forth by the different branches and
-                  the assortment of robots, cars and planes presented by our
-                  zealous technical clubs are just tip of the iceberg of the
-                  true spirit embodied within the Tathva. Apart from being a
-                  platform to exhibit the essence of each club, the Exhibitions
-                  personify the year around work and enthusiasm of our young
-                  minds.
+                  Mind-boggling puzzles to test your limits by the very
+                  enthusiastic Club Mathematica, innovative projects that make
+                  you question what is and isn't possible by the various
+                  passionate branches and the awe-inspiring assortment of
+                  robots, cars and planes presented by our zealous technical
+                  clubs are just the tip of the iceberg of the true spirit of
+                  Tathva. Apart from being a platform to exhibit the essence of
+                  each club, our Exhibitions personify the year-round work and
+                  never dying enthusiasm of our young innovative minds.
                 </p>
               </div>
 
@@ -629,11 +663,11 @@
               <div class="modal-body">
                 <img src="./images/events/proshow1.jpg" />
                 <p class="txt-dark txt txt-body">
-                  Shimmering lights, reverberating rhythms, they add to the glee
-                  and glory of the nights of the technical extravaganza,Tathva.
-                  Years down, the stage has been set for the renowned voices of
-                  the industry. Being the nights that enthrall the crowd,
-                  Proshows steal the limelight throughout the days. It is a show
+                  Shimmering lights, reverberating rhythms, a complete musical
+                  euphoria that adds to the charisma and glory to the nights of
+                  the technical extravaganza, Tathva is. Being the nights that
+                  enthral the crowd and transport us to a mesmerising world,
+                  proshows steal the limelight throughout the days. It is a show
                   to behold, a glance to get.
                 </p>
               </div>
@@ -672,15 +706,15 @@
                   <a href="../external.html?link=https://interface.tathva.org/"
                     >interface.tathva.org</a
                   ><br /><br />
-                  Over the past few years Interface has changed the landscape
+                  Over the past few years, Interface has changed the landscape
                   for young entrepreneurs in South India by providing a platform
                   to implement their ingenious ideas. Interface begins with a
-                  mentoring weekend ahead of the Tathva Interface in which the
+                  mentoring weekend ahead of the Tathva Interface in which
                   selected teams interact with their mentors. The Tathva
-                  Interface brings in the events including workshops, pitching,
+                  Interface brings in events including workshops, pitching,
                   panel discussions and talks from some of the most successful
                   entrepreneurs in India. Interface continues to be the face of
-                  student ingenuity and dedication and its certain that its
+                  student ingenuity and dedication and it’s certain that its
                   bright flame is not going to burn up any time soon.
                 </p>
               </div>
@@ -715,12 +749,12 @@
               <div class="modal-body">
                 <img src="./images/events/gaming1.jpg" />
                 <p class="txt-dark txt txt-body">
-                  Blitzkrieg, present by Tathva'18, is a testament of how
-                  versatile the gaming junkies of Kerala are. Taking things to
-                  the next level, it was the ultimate paradise for the gaming
-                  community. From football to shooter games, the adrenaline
-                  could be felt coursing through the air. It is definitely one
-                  for the books!
+                  Blitzkrieg is an ultimate paradise for the gaming community
+                  with it's wide variety of games ranging from football, which
+                  gives a feel of the actual sport, to shooter games, that make
+                  that atmosphere thick with adrenaline. The excitement and
+                  fervor of last blitzkrieg is a testament that it definitely is
+                  one for the books!
                 </p>
               </div>
 
@@ -758,11 +792,11 @@
                   attempt to reach out to schools, presenting them a unique
                   quizzing session where young quizzers can test their mettle
                   against each other. With prelims conducted across different
-                  venues in the state and huge participation every year it is
-                  definitely Kerala's biggest quizzing event. Selected teams
-                  then compete in the most fiery battle of brains in the state
-                  finals. Being one of the most enthralling events of Tathva,
-                  Samasya proves as a crowd puller every year.
+                  venues in the state attracting massive participation every
+                  year, it is definitely Kerala's biggest quizzing event.
+                  Selected teams compete in the fiercest battle of brains in the
+                  state finals. Being one of the most enthralling events of
+                  Tathva, Samasya proves as a crowd puller every year.
                 </p>
               </div>
 
@@ -798,13 +832,11 @@
                 <p class="txt-dark txt txt-body">
                   The social initiative of Tathva was established to extend a
                   compassionate helping hand to the less fortunate. By focusing
-                  on alleviating the sufferings of the weaker sessions of the
+                  on alleviating the sufferings of the weaker sections of the
                   society, to uplift and empower them, AAVISHKAAR became a grand
-                  success in the past few years.
-                  <br />
-                  Well-planned and comprehensive programmes in healthcare and
-                  education are conducted every year by this brainchild of
-                  Tathva.
+                  success in the past few years. Well-planned and comprehensive
+                  programmes in healthcare and education are conducted every
+                  year by this brainchild of Tathva.
                 </p>
               </div>
 
@@ -838,13 +870,14 @@
               <div class="modal-body">
                 <img src="./images/events/adizya1.jpg" />
                 <p class="txt-dark txt txt-body">
-                  Accompanied by a grand website launch, the works of craft and
-                  colors on the canvas were successful in attracting the crowd
-                  Adizya well deserved. Encouraging creative minds to let their
-                  imagination flow in a number of open participation events,
-                  educating them through multiple lectures by men of repute and
-                  through the exhibition itself it accomplished it's vision and
-                  left an undeniably beautiful mark in our memories.
+                  Accompanied by a grand website launch, the magic casted by the
+                  students on the canvas was successful in attracting a crowd
+                  Adizya deserved. Encouraging creative minds to harness their
+                  imagination by means of a number of open participation events,
+                  educating them through multiple lectures delivered by various
+                  successful personalities and through the exhibition itself
+                  ADIZYA accomplished its vision and etched a special place in
+                  our memories.
                 </p>
               </div>
 
@@ -922,9 +955,9 @@
                   evaluated by NIT Calicut, is one of the focal events,
                   especially in the online mode. We aim at giving the students a
                   JEE ambience to help them prepare for one of the rigorous
-                  exams. In the year 2020, the test was conducted as a
-                  non-profit venture, and all the proceedings were directed to
-                  COVID relief funds.
+                  exams. Last year, the venture was conducted as a non-profit
+                  venture, and all the proceedings were directed to COVID relief
+                  funds.
                 </p>
               </div>
 
@@ -958,14 +991,15 @@
               <div class="modal-body">
                 <img src="./images/events/workshop1.jpg" />
                 <p class="txt-dark txt txt-body">
-                  While succumbing to the daily trials of this ever-changing
-                  world, many a time we let go of the opportunities to immerse
-                  ourselves into the beauty of science and industries rapidly
-                  advancing all around us. From analyzing the intricacies of the
-                  commercial world to delving into the fast paced changes in AI,
-                  our pragmatic workshops can transform seemingly morbid ideas
-                  to exciting industrial avenues. Come and partake in this
-                  fiasco of active knowledge and discover more.
+                  Oftentimes, we tend to succumb to the daily trials of this
+                  ever-changing world and forgo the opportunities to dive deep
+                  and get lost in the beauty of the rapidly advancing scientific
+                  communities and industries. From analyzing the intricacies of
+                  the commercial world to delving into the fast paced changes in
+                  Artificial Intelligence, our pragmatic workshops can transform
+                  your perception of the world around you and morph seemingly
+                  morbid ideas to exciting industrial avenues. Come and partake
+                  in this venture into the scientific and industrial unknowns.
                 </p>
               </div>
 
@@ -996,12 +1030,12 @@
                 Even though the pandemic gripped the whole world, Tathva never
                 lost its glory. We conducted various lectures with prominent
                 speakers like the Nobel laureate, Sir Anthony Legget, Padma Shri
-                winner, Dr. Rajagopala Chidambaram, etc and two days workshops
-                each on different technology relevant topics like
-                Cryptocurrency, Augmented reality, Data Science, Ethical
-                Hacking, Full-stack development, Deep Learning and SEO. Even in
-                online mode, the lectures had a footfall of around 200
-                participants.
+                winner, Dr. Rajagopala Chidambaram, ISRO Project Director, Dr.
+                Anuradha T K etc and two days workshops each on different
+                technology relevant topics like Cryptocurrency, Augmented
+                reality, Data Science, Ethical Hacking, Full-stack development,
+                Deep Learning and SEO. Even in online mode, the lectures had a
+                footfall of around 200 participants.
               </p>
             </div>
             <div class="col-lg-6">
@@ -1078,7 +1112,7 @@
             </div>
           </div>
 
-          <div class="row" style="margin-bottom: 200px">
+          <div class="row" style="margin-bottom: 180px; margin-top: 40px">
             <div class="col-lg-6">
               <div class="whysponsor">
                 <span>
@@ -1095,18 +1129,10 @@
             </div>
             <div class="col-lg-6">
               <p>
-                Tathva, the five day fiesta, attracts tech-wits and creative
-                minds from over 900 colleges across the nation, flowing in to
-                test their capabilities and have an enthralling and fruitful
-                time. Countless heads turn this way during Tathva, hoping to
-                become a part of an endeavor that is nerve- racking and filled
-                with euphoria, all at once.
-                <br />
                 Being a part of Tathva gives you a chance to associate
-                yourselves with The National Institute of Technology, Calicut
-                ranked 28th national wide, and thereby build an everlasting
-                relationship with the institution, an unavoidable part of Kerala
-                history.
+                yourselves with National Institute of Technology Calicut, ranked
+                25th nationwide, thereby building an everlasting relationship
+                with the institution, an unavoidable part of Kerala history.
               </p>
             </div>
           </div>
@@ -1115,7 +1141,7 @@
       <!-- ONLINE TATHVA -->
       <!-- SPONSOR -->
       <section id="sponsor">
-        <h1 style="color: white; margin-top: 50px; text-align: center">
+        <h1 style="color: white; margin-top: 30px; text-align: center">
           Here's why you should consider investing in Tathva
         </h1>
         <div class="container">
@@ -1141,10 +1167,10 @@
                   <div class="frontcard">
                     <div class="words">
                       <h2 class="wordslarge">
-                        Targeted Marketing and Efficient Lead Generation
+                        Targeted Marketing & Lead Generation
                       </h2>
                       <p>
-                        Opportunity to engage among a targeted audience and set
+                        Opportunity to engage among a targeted audience and sets
                         a nice backdrop for building deeper, meaningful
                         connections with people.
                       </p>

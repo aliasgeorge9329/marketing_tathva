@@ -2,6 +2,9 @@ var navbar = $(".navbar");
 $(window).resize(function () {
   if (window.innerWidth <= 600) navbar.addClass("fixed-top");
   else navbar.removeClass("fixed-top");
+
+  if (window.innerWidth <= 1200) $(".col-xl-5").addClass("order-last");
+  else $(".col-xl-5").removeClass("order-last");
 });
 // ===== Scroll to Top ====
 $(window).scroll(function () {

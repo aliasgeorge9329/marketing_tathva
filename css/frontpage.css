@@ -2,7 +2,6 @@
   background: rgb(0, 0, 0);
   background-size: 40%;
   background-size: cover;
-  /* margin-left: 90px; */
   margin-top: 25px;
   padding-bottom: 30px;
 }
@@ -20,12 +19,14 @@
 #frontpage .offcanvas-end {
   width: 250px;
 }
-#frontpage .main-heading {
+
+#frontpage .offcanvas {
+  background: rgb(0, 0, 0);
   color: white;
-  font-family: "Clash Display", sans-serif;
-  font-size: 6rem;
-  margin-bottom: 10px;
-  font-weight: bold;
+}
+
+#frontpage .top-sec {
+  width: 9rem;
 }
 #frontpage .nav-item a {
   color: white;
@@ -36,108 +37,6 @@
   margin: 0 20px;
 }
 
-#frontpage .main-content {
-  color: rgb(184, 183, 183);
-  font-size: 1.5rem;
-  width: 550px;
-  height: fit-content;
-  font-family: "General Sans", sans-serif;
-}
-
-@media screen and (min-width: 660px) {
-  #frontpage .mains {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 250px;
-    margin-bottom: 110px;
-    margin-left: 70px;
-  }
-  #frontpage .button-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 550px;
-    margin-top: 50px;
-  }
-
-  #frontpage .top-sec {
-    width: 200px;
-    margin-left: 30px;
-  }
-
-  #frontpage {
-    margin-left: 90px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #frontpage .mains h1,
-  p {
-    margin-left: 20px;
-  }
-  #frontpage .nav-item a,
-  .offcanvas-title {
-    color: white;
-  }
-  #frontpage .mains {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 250px;
-    margin-bottom: 10px;
-  }
-  #frontpage .button-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 550px;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
-
-  #frontpage .top-sec {
-    width: 100px;
-    margin-left: 30px;
-  }
-  #frontpage .offcanvas {
-    background: rgb(0, 0, 0);
-  }
-}
-#frontpage .buttons {
-  width: 300px;
-  height: 80px;
-  font-family: "Clash Display", sans-serif;
-  font-size: 2.3rem;
-  font-weight: bold;
-  border-radius: 90px;
-  margin-right: 5%;
-}
-#frontpage .button1 {
-  border: 0;
-  color: white;
-  background-image: linear-gradient(
-    to right,
-    rgb(116, 173, 248),
-    rgb(54, 54, 223),
-    rgb(58, 19, 129)
-  );
-}
-#frontpage .button2 {
-  color: rgb(184, 183, 183);
-  background-color: rgb(0, 0, 0);
-}
-
-#frontpage .top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  /* margin-left: 33px; */
-  align-items: center;
-  z-index: 0;
-}
-
 #frontpage .icons {
   position: absolute;
   top: 320px;
@@ -146,6 +45,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 #frontpage .icons li {
   list-style-type: style none;
@@ -172,212 +72,175 @@
 #frontpage .icons li:hover a img {
   transform: rotate(360deg);
 }
-#frontpage .main-logo {
-  width: 45%;
-  height: 50%;
-  margin-left: 55px;
-  margin-top: 80px;
-}
-#frontpage .main-div {
+
+#frontpage .button-div {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+  margin-top: 50px;
 }
 
-@media screen and (max-width: 1500px) and (min-width: 1350px) {
-  #frontpage .icons {
-    visibility: hidden;
-  }
+#frontpage .buttons {
+  width: 40%;
+  height: 70px;
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 90px;
+}
+#frontpage .button1 {
+  border: 0;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(116, 173, 248),
+    rgb(54, 54, 223),
+    rgb(58, 19, 129)
+  );
+}
+#frontpage .button2 {
+  color: rgb(184, 183, 183);
+  background-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 1350px) {
-  #frontpage .top {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-  }
-  #frontpage .Navbar-List {
-    display: none;
-  }
-  #frontpage .main-heading {
-    display: flex;
-    font-size: 4rem;
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  #frontpage .icons {
-    position: absolute;
-    margin-right: -30px;
-  }
-  #frontpage .main-div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 400px;
-  }
+#frontpage .frontmaincontent {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#frontpage .frontcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#frontpage .mains {
+  width: 85%;
+  display: block;
+}
+#frontpage .main-logo {
+  width: 80%;
+  height: 90%;
+}
+#frontpage .main-heading {
+  color: white;
+  font-family: "Clash Display", sans-serif;
+  font-size: 6rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 0 10px;
+  /* text-align: center; */
+}
+
+#frontpage .main-content {
+  padding: 0 30px;
+  color: rgb(184, 183, 183);
+  font-size: 150%;
+  width: 100%;
+  height: fit-content;
+  font-family: "General Sans", sans-serif;
+}
+
+@media only screen and (max-width: 1400px) {
   #frontpage .buttons {
-    width: 120px;
-    height: 40px;
+    font-size: 1.2rem;
   }
-  #frontpage .button-div {
-    width: 300px;
+}
+@media only screen and (max-width: 1200px) {
+  #frontpage .main-logo {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    left: -100px;
   }
-  #frontpage .main-content {
-    width: 700px;
-    font-size: 1.5rem;
+  #frontpage .frontcontainer-2 {
+    margin-top: 100px;
   }
+
   #frontpage .buttons {
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
-  /* #frontpage .mains {
-    margin-top: 21rem;
-    margin-bottom: 10px;
-  } */
+}
+@media only screen and (max-width: 990px) {
+  #frontpage .main-logo {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    left: -100px;
+  }
+  #frontpage .top-sec {
+    width: 20%;
+  }
+
+  #frontpage .buttons {
+    width: 40%;
+    height: 70px;
+    font-size: 115%;
+  }
+}
+@media only screen and (max-width: 600px) {
   #frontpage .mains {
-    margin-top: 9rem;
+    width: 85%;
+    display: block;
+    position: relative;
+    left: -5%;
   }
   #frontpage .main-logo {
-    position: absolute;
-    top: 80px;
-    left: 40px;
-    /* bottom: 1000px; */
-    height: 55%;
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 1210px) and (min-width: 900px) {
-  #frontpage .main-heading {
-    display: flex;
-    font-size: 4rem;
-    font-weight: bold;
-  }
-
-  #frontpage .main-logo {
-    height: 30rem;
-    width: 30rem;
-  }
-  #frontpage .mains {
-    margin-top: 9rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  /* #frontpage .main-heading {
-    display: flex;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 40px;
-  } */
-
-  #frontpage .main-content {
-    width: 80%;
-    font-size: 1.6rem;
-  }
-
-  #frontpage .main-logo {
-    position: absolute;
-    /* top: 60px; */
-    left: -20px;
-    height: 52%;
-    width: 73%;
-    z-index: 2;
-  }
-
-  #frontpage .icons {
-    position: absolute;
-    margin-right: -45px;
-    z-index: 3;
-  }
-}
-@media screen and (max-width: 650px) and (min-width: 500px) {
-  #frontpage .main-heading {
-    display: flex;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 8rem;
-  }
-  #frontpage .main-logo {
-    height: 40%;
-    width: 60%;
-  }
-
-  #frontpage .mains {
-    margin-top: 9rem;
-    margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 500px) {
-  #frontpage .main-heading {
-    display: flex;
-    font-size: 3rem;
-    font-weight: bold;
-    /* margin-top: -10px; */
-  }
-  #frontpage .main-logo {
-    height: 25rem;
-    width: 25rem;
-  }
-  #frontpage .mains {
-    margin-top: 180px;
-    margin-bottom: 10px;
-  }
-  #frontpage .main-content {
-    width: 80%;
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 400px) and (min-width: 300px) {
-  #frontpage .main-heading {
-    display: flex;
-    font-size: 3rem;
-    font-weight: bold;
-    /* margin-top: -10px; */
-  }
-  #frontpage .main-logo {
-    position: absolute;
-    top: 40px;
+    width: 100%;
+    height: 100%;
+    position: relative;
     left: -40px;
-    /* height: 52%; */
-    width: 20rem;
-    z-index: 2;
+    top: 20px;
+    z-index: 0;
+  }
+  #frontpage .main-heading {
+    font-size: 3rem;
+    padding: 0;
   }
   #frontpage .main-content {
-    width: 80%;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 0;
   }
-  #frontpage .mains {
-    margin-top: 9.4rem;
-    margin-bottom: 10px;
+  #frontpage .frontcontainer-2 {
+    margin-top: 140px;
   }
-}
-@media screen and (max-width: 300px) {
-  #frontpage .main-heading {
-    display: flex;
-    font-size: 3rem;
-    font-weight: bold;
-    /* margin-top: -10px; */
+  #frontpage .icons {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+  }
+  #frontpage .buttons {
+    width: 70%;
+    height: 40px;
+    font-size: 0.9rem;
   }
 
-  #frontpage .mains {
-    margin-top: 160px;
-    margin-bottom: 10px;
+  #frontpage .button-div {
+    padding: 0;
+  }
+  #frontpage .top-sec {
+    width: 6rem;
+  }
+  #frontpage .frontmaincontent {
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
+/* WORDS SHINE */
 .btn-shine {
-  padding-right: 100px;
-  color: #fff;
   background: linear-gradient(
     to right,
     #4d4d4d 0,
     rgb(255, 220, 21) 10%,
     #4d4d4d 20%
   );
-  background-position: -20px;
+  background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 5s infinite linear;
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   text-decoration: none;
-  white-space: nowrap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -386,8 +249,9 @@
   0% {
     background-position: -10px;
   }
-  50% {
+  60% {
     background-position: 260px;
+    background: white transparent;
   }
   100% {
     background-position: 260px;
@@ -397,13 +261,14 @@
 @media screen and (min-width: 900px) {
   @keyframes shine {
     0% {
-      background-position: 0;
+      background-position: -10px;
     }
     60% {
-      background-position: 530px;
+      background-position: 490px;
+      background: white transparent;
     }
     100% {
-      background-position: 530px;
+      background-position: 490px;
     }
   }
 }
