@@ -49,6 +49,8 @@
 .modal-header,
 .modal-footer {
   background-color: black;
+  background-image: url(../images/frontcard1.jpeg);
+  border: none;
 }
 #events-section .modal .modal-body p {
   padding: 10%;
