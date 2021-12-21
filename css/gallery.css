@@ -20,6 +20,8 @@
     -webkit-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    cursor: default;
   }
 }
 
@@ -34,6 +36,8 @@
     -webkit-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    cursor: default;
   }
 }
 .carousel-gallery .swiper-slide a:hover .image .overlay {
