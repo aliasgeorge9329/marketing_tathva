@@ -12,7 +12,7 @@
   #sponsor .words {
     color: rgb(155, 154, 154);
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 30px;
     right: 10px;
   }
@@ -32,7 +32,15 @@
     top: 10%;
     left: 30px;
     right: 10px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  #sponsor .words h2 {
+    font-size: 1.35rem;
+  }
+
+  #sponsor .words .wordslarge {
+    font-size: 1.2rem;
   }
 }
 
