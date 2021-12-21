@@ -13,6 +13,10 @@
 }
 
 #contact p {
-  margin-top: 10px;
-  font-size: 1rem;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+#contact img {
+  margin-top: 60px;
 }
