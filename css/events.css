@@ -165,21 +165,21 @@
     left: 0;
     background-color: transparent;
   }
-  #events-section .contain .card-full .triangle-bottom-right {
+  /* #events-section .contain .card-full .triangle-bottom-right {
     border-left: 380px solid transparent;
     border-bottom: 260px solid rgba(0, 0, 0, 67%);
-  }
+  } */
   #events-section .contain .card-full .triangle-top-left {
-    border-right: 380px solid transparent;
-    border-top: 260px solid rgba(0, 0, 0, 67%);
+    border-right: 360px solid transparent;
+    border-top: 250px solid rgba(0, 0, 0, 67%);
   }
   #events-section .contain .card-full .triangle-top-right {
-    border-left: 380px solid transparent;
-    border-top: 260px solid rgba(0, 0, 0, 67%);
+    border-left: 360px solid transparent;
+    border-top: 250px solid rgba(0, 0, 0, 67%);
   }
   #events-section .contain .card-full .triangle-bottom-left {
-    border-right: 380px solid transparent;
-    border-bottom: 260px solid rgba(0, 0, 0, 67%);
+    border-right: 360px solid transparent;
+    border-bottom: 250px solid rgba(0, 0, 0, 67%);
   }
   #events-section .contain .card .textarea {
     z-index: 2;
