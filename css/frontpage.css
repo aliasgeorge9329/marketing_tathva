@@ -148,17 +148,18 @@
 }
 @media only screen and (max-width: 1200px) {
   #frontpage .main-logo {
-    width: 70%;
-    height: 100%;
+    width: 50%;
     position: relative;
     left: -100px;
   }
   #frontpage .frontcontainer-2 {
     margin-top: 100px;
   }
-
   #frontpage .buttons {
     font-size: 1.7rem;
+  }
+  #frontpage .fabars {
+    width: 5%;
   }
 }
 @media only screen and (max-width: 990px) {
@@ -190,7 +191,7 @@
     height: 100%;
     position: relative;
     left: -40px;
-    top: 20px;
+    top: 80px;
     z-index: 0;
   }
   #frontpage .main-heading {
