@@ -151,7 +151,7 @@
 @media screen and (min-width: 740px) {
   #events-section .contain {
     grid-template-columns: 1fr 1fr;
-    width: 710px;
+    width: 720px;
   }
   #events-section .contain .card {
     margin-left: 2.5px;
