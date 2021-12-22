@@ -226,6 +226,9 @@
     margin-top: 5px;
     margin-bottom: 20px;
   }
+  #frontpage .fabars {
+    width: 8%;
+  }
 }
 /* WORDS SHINE */
 .btn-shine {
