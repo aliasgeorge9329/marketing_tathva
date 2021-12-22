@@ -29,7 +29,7 @@
   }
 
   #about .about-img {
-    width: 300px;
+    width: 350px;
     margin-left: 40px;
   }
 }
@@ -51,7 +51,7 @@
   }
 
   #about .about-img {
-    width: 40%;
+    width: 50%;
     display: block;
     margin: auto;
     margin-top: 20px;
