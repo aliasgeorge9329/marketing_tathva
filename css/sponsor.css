@@ -126,6 +126,8 @@
     text-align: center;
     font-size: 4rem;
     margin-bottom: 100px;
+    font-family: "General Sans", sans-serif;
+    font-weight: bold;
   }
 }
 
@@ -173,5 +175,7 @@
     text-align: center;
     font-size: 3rem;
     margin-bottom: 50px;
+    font-family: "General Sans", sans-serif;
+    font-weight: bold;
   }
 }

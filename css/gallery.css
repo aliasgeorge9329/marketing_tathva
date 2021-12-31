@@ -1,4 +1,9 @@
 /*Carousel Gallery*/
+
+#gallery h1 {
+  font-family: "General Sans", sans-serif;
+  font-weight: bold;
+}
 .carousel-gallery {
   /* margin: 50px 0; */
   /* padding: 0 30px; */

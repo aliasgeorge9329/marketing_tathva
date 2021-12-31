@@ -10,6 +10,7 @@
   margin-bottom: 80px;
   font-weight: bold;
   color: white;
+  font-family: "General Sans", sans-serif;
 }
 @media screen and (max-width: 990px) {
   #events-section .mainhead {
@@ -39,6 +40,9 @@
 
 #events-section .modal .txt-title {
   line-height: 1.5em;
+  font-size: 2.5rem;
+  font-family: "General Sans", sans-serif;
+  font-weight: bold;
 }
 
 #events-section .modal .modal-body {
